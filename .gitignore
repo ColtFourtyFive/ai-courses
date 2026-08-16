@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# env / secrets
+.env
+.env.*
+
+# node (if any tooling is added later)
+node_modules/
+
+# scratch
+*.tmp
+/tmp/

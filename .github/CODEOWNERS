@@ -1,0 +1,18 @@
+# Auto-requests the right reviewer on every PR. Replace @ayan / @osman with real GitHub handles.
+
+# Ayan — foundations
+/modules/part-1-what-ai-actually-is/                               @ayan
+/modules/part-2-using-ai-well/module-05-prompt-engineering.md      @ayan
+/modules/part-4-doing-it-right/module-13-under-the-hood.md         @ayan
+
+# Osman — applied / building
+/modules/part-2-using-ai-well/module-06-grounding-context.md       @osman
+/modules/part-2-using-ai-well/module-07-chats-to-workflows.md      @osman
+/modules/part-2-using-ai-well/module-08-beyond-text-multimodal.md  @osman
+/modules/part-3-building/                                          @osman
+/modules/part-4-doing-it-right/module-12-safety-privacy.md         @osman
+/modules/capstone/                                                 @osman
+
+# Shared sources — BOTH must review any change
+/sources/                                                          @ayan @osman
+/AGENTS.md                                                         @ayan @osman

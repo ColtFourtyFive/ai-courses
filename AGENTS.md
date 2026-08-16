@@ -1,0 +1,88 @@
+# AGENTS.md — Building Course Module Content
+
+> Drop-in operating brief for any agent (or person) building one module of the AI Fluency course. Read this, then your module's spec, then build.
+
+## Your job
+Produce the actual learner-facing content for **one module** — the explanations, activities, and artifact — to *ready-to-review* quality. You're writing the module, not planning it.
+
+## Read first — and what to take from each
+1. **AI Fluency Master Build Plan** → your module's spec: what it covers, its blocks, its artifact, what to repurpose, its owner. *This is your assignment — start here.*
+2. **AI Fluency Course Curriculum** → the teaching substance; for the foundational modules it has full drafted content to build from. Also your reference for voice and for how each concept is explained.
+3. **AI Fluency Format & Delivery** → what each block type is (Concept, Demo, Try-It, Guided Lab, Mission, Project, Checkpoint, Share, Go Deeper) and how a module is shaped.
+4. **Source Material Library** → the actual workshop content to repurpose, *if* your spec lists a "repurpose from." Pull the exact framework, prompt, or checklist named — don't paraphrase it from memory.
+
+## What you produce — module output shape
+Write the module as markdown in this shape. Fill only the blocks your spec calls for — not every module uses every block.
+
+```
+# Module N · [Title]
+Emotional target: [...]   ·   Est. time: [~X min]
+
+## Why this matters
+[1–2 real sentences — why the learner should care. Not cutesy.]
+
+## What you'll walk away able to do
+- [plain objective]
+- [plain objective]
+
+## [Each block the spec lists — Concept / Demo / Try-It / Lab / Mission / Project / Checkpoint / Share]
+[The actual content.
+ - Concept: short, plain, analogy-first.
+ - Demo: what the learner watches happen.
+ - Try-It / Lab / Mission / Project: exact instructions + what success looks like.
+ - Checkpoint: a quick understanding check.]
+
+## The one thing to remember
+[Single-sentence takeaway.]
+
+## Artifact
+[What the learner keeps or shows.]
+
+## Safety / verify note  (if relevant)
+
+## Go Deeper →
+[Link(s) into the reference layer / Codex.]
+```
+
+## Voice (non-negotiable)
+Audience: teens ~13–16, no CS background, some nervous about AI. Plain, warm, direct, a little dry humor. Talk *to* them, never down to them, never corporate or academic.
+- **Demystify first:** a plain-English "here's what's really going on" before any jargon. **Analogy before definition.** Short sentences.
+- **No textbook walls** — break concept with a demo or try-it. Honest about limits (it can be confidently wrong). No hype, no fear-mongering, no condescension.
+- Every module ends in something the learner **keeps or shows**.
+
+Good: *"An LLM is basically a next-word guessing machine that got scary good by reading a huge chunk of the internet."*
+Not this: *"Large Language Models leverage transformer-based architectures to model token probability distributions."*
+
+## Explain recurring concepts exactly as the Curriculum does
+Don't invent new analogies for these — reuse the canonical framings:
+- **LLM** = a next-word prediction engine trained on huge text. (Analogy: a brilliant intern who's read everything but knows nothing about your situation yet.)
+- **Model vs. app/harness** = brain vs. body (memory, web, tools, the loop). "ChatGPT" ≠ "GPT."
+- **Chatbot** = brain + conversation. **Agent** = brain + goal + tools + a loop ("a chatbot answers; an agent does").
+- **Prompting** = clear thinking made explicit (Role + Context + Task + Format + Iterate).
+- **Hallucination** = predicts *plausible*, not *true* → fluent and sometimes confidently wrong; verify what matters.
+- **Skill** = mostly a markdown file + a good prompt + a little config.
+
+## Examples — use BOTH real and teen-relevant
+Two kinds of example, both valuable — don't strip one out:
+- **Teen-relevant** (a Discord tool, a study guide, game-stat charts, a one-page site for their club) — so they can actually *do* it and see themselves in it.
+- **Real business** (kept from the workshops — a company getting its team to use AI, a real reporting or campaign workflow) — a window into how AI is actually used in a real job and what a workplace expects. These are motivating and give real-world insight.
+
+Rule of thumb: give a teen example they can act on, **and** keep or introduce a real one so they see the professional version. Frame the real ones as *"here's how an actual company does this."* (Only drop pure workshop-logistics like "bring it to your 1:1" — that's not a teaching example.)
+
+## Build workflow
+1. Read your module's spec in the Master Build Plan.
+2. Pull any "repurpose from" material from the Source Material Library.
+3. Draft the **Core** content — short — for each block the spec lists.
+4. Build **one interactive block** with clear success criteria.
+5. Define the **artifact** the learner keeps.
+6. Add **Go Deeper** links and a **safety/verify** note if relevant. Estimate rough timing.
+
+## Guardrails (the locked decisions)
+- **De-vendor:** concept-first, name tools as examples; Codex-specific detail only in the optional Builder tier.
+- **Examples:** use both teen-relevant and real business ones (see above).
+- **Audience:** use the confirmed age band for pacing and examples.
+- **Don't pad.** If it reads like a textbook, it's wrong.
+
+## Done means
+- **Ready to review:** core content drafted + one interactive block sketched + artifact defined.
+- **Fully done (after human review):** short core content · one interactive block with success criteria · defined artifact · Go Deeper links · safety/verify note where relevant · piloted with ≥1 real learner and timing captured.

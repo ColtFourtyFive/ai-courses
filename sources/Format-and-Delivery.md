@@ -1,0 +1,100 @@
+# AI Fluency — Course Format & Delivery
+
+> Companion to the curriculum doc. The curriculum defines *what* we teach; this defines *how* it's delivered — what a module actually looks like, how reading and hands-on mix, and what the site and service include.
+
+The whole thing is built from a small set of standard **blocks**. Every module is assembled from them, so the course is consistent to build and to learn — but each module mixes the blocks differently. Some modules lean on reading and demos (the "how it works" concepts). Some are almost entirely hands-on (labs, missions, projects). Most are a deliberate blend. That mix is the point: we don't force interactivity where a clear explanation teaches faster, and we don't lecture where doing teaches better.
+
+---
+
+## 1. The building blocks (what a module is made of)
+
+| Block | What it is | When we use it |
+|---|---|---|
+| **Concept** | Short reading + visuals (and/or a 1–2 min video). Tight and plain, never textbook-length. | Teaching how something actually works. |
+| **Demo** | A worked example showing the behavior — embedded or run live in a session. | Making an abstract idea visible before they try it. |
+| **Try-It** | A tiny interactive task done *right in the page's AI sandbox* — poke it, see what happens. | Turning a concept into something they immediately feel. |
+| **Guided Lab** | A structured, step-by-step exercise: given inputs, clear steps, success criteria. Produces a small artifact. | Practicing a skill with guardrails. |
+| **Mission** | An open-ended challenge toward a goal, with light guidance. Playful, creative. | Building confidence and letting them make choices. |
+| **Project** | A bigger, self-directed build they keep. | Real capability and portfolio proof. |
+| **Checkpoint** | A quick understanding check or short reflection. | Confirming the idea landed; light progress signal. |
+| **Share** | Post the artifact / show-and-tell to the cohort. | The social layer — momentum and status. |
+| **Go Deeper** | Optional link into the reference library (the Codex). | Depth on demand, never required. |
+
+Think of the interactive blocks as a spectrum of freedom: **Try-It** (tiny, guided) → **Guided Lab** (structured) → **Mission** (open goal) → **Project** (fully theirs). Modules move learners rightward along that spectrum as they gain confidence.
+
+---
+
+## 2. How blocks assemble into a module
+
+Not every module uses every block. There are three archetypes, plus the opener.
+
+- **Unlock / Orientation** → mostly a single guided **Mission** (build something first), almost no reading. *Purpose: kill fear.*
+- **Concept module** (e.g., *What an LLM Is*, *LLM vs Chatbot vs Agent*) → **Concept + Demo + one Try-It + Checkpoint + Go Deeper.** Read-leaning, but never passive — they still poke it themselves.
+- **Skill module** (e.g., *Prompt Engineering*, *Grounding*) → **short Concept + Try-It + Guided Lab → keep an artifact + Share.** Balanced.
+- **Build module** (e.g., *Building Your Own*, *Agents*, *Capstone*) → **brief Concept + Mission and/or Project + Share.** Do-leaning.
+
+**The rule of thumb for the mix:** *how it works* → Concept + Demo. *A skill* → Guided Lab. *A capability/power* → Mission or Project. Every module, regardless of type, ends with something the learner **keeps or shows.**
+
+---
+
+## 3. Format mapped to the curriculum
+
+Each module's block recipe, so the read/interactive balance is clear at a glance:
+
+| # | Module | Lean | Block recipe |
+|---|---|---|---|
+| 0 | Start Here: Demystify | Do | Mission |
+| 1 | What an LLM Actually Is | Read + do | Concept · Demo · Try-It · Checkpoint |
+| 2 | LLM vs Chatbot vs Agent | Read + do | Concept · Demo · Try-It · Checkpoint |
+| 3 | What It's Great At, Where It Breaks | Read + do | Concept · Try-It (break it) · Checkpoint |
+| 4 | Picking the Right Model | Do | Concept (brief) · Guided Lab |
+| 5 | Prompt Engineering | Read + do | Concept · Try-It · Guided Lab · Share |
+| 6 | Giving It the Right Context | Do | Concept (brief) · Guided Lab · Share |
+| 7 | From Chats to Workflows | Do | Concept (brief) · Mission · Share |
+| 8 | Beyond Text (Multimodal) | Do | Demo · Mission · Share |
+| 9 | Building Your Own | Build | Concept (brief) · Guided Lab · Project · Share |
+| 10 | Agents & Automation | Build | Concept · Mission · Project · Share |
+| 11 | Builder Track (optional) | Build | Guided Labs · Go Deeper |
+| 12 | Safety, Privacy & Responsible Use | Read + do | Concept · Try-It · Checkpoint |
+| 13 | Under the Hood (optional) | Read | Concept · Go Deeper |
+| — | Capstone | Build | Project · Share |
+
+Roughly a third concept-led, a third skill labs, a third open building — with a hands-on element in almost every module.
+
+---
+
+## 4. The learner experience, end to end
+
+1. **Dashboard.** They see the path, where they are, and what's next.
+2. **Module.** They work through its blocks in order — read a little, watch a demo, then *do* it in the built-in sandbox. Reading and doing are interleaved, never separated into "study" then "apply."
+3. **Artifact.** Every module produces something kept in their portfolio — a prompt, a tool, a build.
+4. **Live session.** Twice a week, the cohort meets: unsticking, a short teach, and **show-and-tell** where they demo what they built.
+5. **Progress.** Checkpoints and the growing portfolio make progress visible the whole way.
+6. **Next.** The path pulls them forward; difficulty and freedom rise as confidence does.
+
+Self-paced content carries the learning; the live cohort carries the motivation and the proof.
+
+---
+
+## 5. What the site / service includes
+
+- **Learner dashboard & path** — the map, progress, and next step.
+- **Module player** — renders the blocks in sequence (reading, demos, labs, checkpoints).
+- **Embedded AI workspace (sandbox)** — where Try-Its, labs, and builds happen *in-page*, so there's no tool-switching or setup friction. This is the interactivity engine of the whole course.
+- **Portfolio** — every artifact and build, collected automatically. The proof and the confidence-builder.
+- **Checkpoints & progress tracking** — light-touch, motivating, not exam-like.
+- **The Codex (reference library)** — the full, rigorous "how it works" depth, linked from every module's Go Deeper, browsable on its own.
+- **Templates & resources** — reusable prompts, workflow templates, starter files.
+- **Live cohort layer** — scheduled sessions, show-and-tell, a facilitator, and a community channel where learners share builds between sessions.
+
+---
+
+## 6. Delivery rhythm
+
+- **Self-paced core:** learners move through modules on the platform at their own pace.
+- **Cohort rhythm:** ~2 live sessions/week for progress checks, unsticking, a short teach, and show-and-tell.
+- **The blend is the moat:** interactive self-paced content (buildable and personalizable with AI) + a human layer that supplies accountability, momentum, and proof — the thing a video course or a PDF can't replicate.
+
+---
+
+*Bottom line: one consistent block system, mixed per module — concept-led where understanding matters, hands-on where doing teaches faster, and always ending in something the learner keeps or shows. The curriculum is the content; this is the machine that delivers it.*
