@@ -10,6 +10,225 @@
 - **Artifact:** a reusable prompt they'll use for school this week.
 
 ---
-## DRAFT BELOW — write the module here, in AGENTS.md voice & output shape
-_(fill only the blocks the spec lists; pull research from research-notes/module-05.md; pull repurpose material from sources/Source-Material-Library.md)_
 
+# Module 5 · Prompt Engineering: The Master Skill
+Emotional target: "the power is in how I ask"   ·   Est. time: ~30 min
+
+## Why this matters
+This is the highest-leverage skill in the entire course. The model's ceiling is high — your prompt decides how much of it you reach. Same model, vague prompt → mediocre output. Same model, sharp prompt → something you'd actually use. Once you get this, almost everything after it — custom assistants, agents — is mostly *this* skill applied.
+
+## What you'll walk away able to do
+- Write prompts that reliably get great output on the first or second try
+- Explain why prompting is communication, not magic words
+- Have a reusable prompt you'll actually use for school this week
+
+---
+
+## Concept
+
+### Prompting is not magic words
+
+Forget prompt cheat sheets. Forget "jailbreaks." Forget any framing that treats prompting as a set of secret commands to unlock a machine.
+
+**Prompting is clear communication.** The model is a brilliant intern who has read almost everything — but knows nothing about you, your class, your situation, or what you actually want. Your job is to brief them well. A good brief gets a good result. A vague brief gets a vague result — not because the model is dumb, but because it's doing its best with nothing to go on.
+
+If you walked up to a new intern and said *"help me with my essay"* — they'd stare at you. What essay? What kind of help? For what audience? Due when? Same thing here.
+
+---
+
+### The five-piece recipe
+
+Most strong prompts have these five pieces:
+
+**1. Role** — who it should act as.
+> *"You are a patient chemistry tutor."*
+
+**2. Context** — the situation and what you already know or don't.
+> *"I'm a 10th grader who missed the lesson on moles and has a quiz Friday. I understand what atoms are but the mole concept isn't clicking."*
+
+**3. Task** — exactly what you want back.
+> *"Explain moles using one everyday example, then give me three practice questions."*
+
+**4. Format** — how you want it delivered.
+> *"Keep it under 150 words. No jargon. Start with the example before the definition."*
+
+**5. Iterate** — treat the first output as a draft, not a final answer.
+> *"Good, but the example was about cooking — use something from sports instead and add one harder question."*
+
+> A note on #5: the first four pieces go into your prompt. Iterate is what you do *after* you read the output. It's less an element and more a mindset — expect to refine, and you won't be disappointed by an imperfect first run.
+
+---
+
+### See the difference
+
+| | Prompt | What the model has to work with |
+|---|---|---|
+| **Weak** | "explain climate change" | Topic, nothing else |
+| **Strong** | "You're a science teacher explaining to a curious 9th grader. Explain why climate change happens using one everyday analogy, in under 120 words, then check my understanding with two questions." | Role + audience + topic + analogy constraint + word limit + task structure |
+
+Same model. Completely different output.
+
+---
+
+### A few techniques worth knowing
+
+**Show, don't just tell.** Give an example of what you want. Even one example dramatically narrows what the model produces toward what you had in mind.
+
+**Ask it to think step by step** for anything involving logic, math, or multi-step reasoning. It genuinely improves accuracy on those tasks.
+
+**Say what you *don't* want.** "Don't use bullet points. Don't add a motivational closing. Don't use the phrase 'it's important to note.'" Negative instructions are underused and highly effective.
+
+**Break big asks into steps** instead of one giant prompt. One step at a time beats one giant "do everything" request almost every time.
+
+---
+
+### The one thing prompting can't do
+
+A sharp prompt makes output *better*. It does not make it *true*. Module 3's verify habit still applies — better output is still output you should check when accuracy matters.
+
+---
+
+### Real stakes: why this matters beyond school
+
+Some lawyers started using AI to write legal briefs without thinking carefully about their prompts. They'd ask it to "find supporting cases" — and it would confidently produce citations to cases that didn't exist. Lawyers were fined and disciplined in court for submitting AI-fabricated citations they hadn't caught.
+
+The law firms that avoided the problem weren't using a different AI. They were prompting differently: *"Use only the cases I paste below. Do not generate case names or citations from your training data. If no supplied case supports the argument, say so."* Specific context. Clear constraints. Explicit instructions about what not to do.
+
+Same tool. Wildly different results. Prompt quality made a career difference.
+
+*(GitHub's research on developer productivity found the same pattern: engineers who briefed AI like a junior teammate who needed a clear task got dramatically better code than those who wrote "fix this" with no context.)*
+
+---
+
+## Try-It
+
+Watch the recipe build, one piece at a time.
+
+**Start with the weak prompt.** Open your AI sandbox and run this exactly:
+
+> `help me study for my quiz`
+
+Read what comes back. It'll be generic — because it doesn't know what subject, what topics, what kind of help, or how much time you have. It did its best with nothing.
+
+**Now build the strong version, one piece at a time.**
+
+Watch what changes after each addition:
+
+1. **Add Role:** *"You are a patient tutor who explains things with real examples."*
+   → Run it. The tone shifts.
+
+2. **Add Context:** *"I'm studying for a history quiz on the causes of World War I. I understand Nationalism but I'm shaky on Alliances and Imperialism."*
+   → Run it. The content becomes specific.
+
+3. **Add Task:** *"Explain Alliances and Imperialism in two paragraphs each, with one real historical example per paragraph."*
+   → Run it. The output has shape.
+
+4. **Add Format:** *"Keep each paragraph under 100 words. End with three practice questions, starting easy and getting harder. No bullet points."*
+   → Run it. The output is usable.
+
+**Compare your first run to your last run.** Same model. The only thing that changed was what you gave it.
+
+**Now try your own.** Take one weak prompt you'd normally type — something vague you'd actually ask — rewrite it with the five-piece recipe, run both, and save the better version.
+
+---
+
+## Guided Lab: Build Your Study Prompt
+
+You're going to build one strong prompt for something you're *actually studying right now*. By the end, you'll have something reusable — swap the topic each week and the prompt works again.
+
+**Step 1 — Pick your subject and topic.**
+Don't write "science." Write something specific: "cell division," "the French Revolution," "slope-intercept form," "photosynthesis and cellular respiration." The more specific, the better.
+
+My topic: _______________
+
+**Step 2 — Write the Role.**
+> "You are a [tutor/teacher] who [how you want them to teach]."
+
+Example: *"You are a patient math tutor who always starts with a real-world example before explaining the formula."*
+
+My Role: _______________
+
+**Step 3 — Write the Context.**
+2–3 sentences. What's the topic? What do you already understand? What's still confusing?
+
+Example: *"I'm studying slope-intercept form in Algebra. I understand what slope means but I keep mixing up where the y-intercept goes in the equation y = mx + b."*
+
+> Tip: be specific enough that a tutor who knows nothing about your class could still help you.
+
+My Context: _______________
+
+**Step 4 — Write the Task.**
+Exactly what you want: an explanation, a summary, a quiz, a comparison, worked examples.
+
+Example: *"Explain slope-intercept form step by step, using a graph example and a real-life example. Then give me two practice problems."*
+
+My Task: _______________
+
+**Step 5 — Write the Format.**
+How long? What style? What should it *not* do?
+
+Example: *"Keep it under 200 words. No bullet points. End with two practice problems — one easy, one harder."*
+
+My Format: _______________
+
+**Step 6 — Run it. Then iterate.**
+Read what you get. What was good? What was missing or off?
+
+Add one more instruction and re-run. Examples:
+- Output too long → add a word limit
+- Too generic → add "use a real example, not a hypothetical"
+- Missing a key point → add it to the Context
+- Tone wrong → specify it in Format
+
+Save your finished prompt. Replace [TOPIC] each week — the structure works for any subject.
+
+**Success looks like:** you have a 5-element prompt you ran at least once and improved once. The final output is meaningfully better than "explain [topic]" would produce.
+
+---
+
+## Level up: the operating brief
+
+Once you've used the recipe a few times, it becomes instinct — you'll stop thinking "did I hit all five pieces?" and just start writing clear prompts naturally.
+
+When tasks get bigger, the pros use a slightly more formal version. Same idea, more precise:
+
+```
+Goal:         What are we trying to accomplish? (one sentence)
+Context:      What should it understand about my situation?
+Deliverables: What exactly should it give me back?
+Constraints:  What should it avoid, not change, or ask me about first?
+```
+
+Look familiar? That's the same five-piece recipe, formalized. Your Guided Lab prompt already hits all four.
+
+You'll use this exact format in Module 10, when we give AI agents multi-step tasks to run on their own. For now: notice you were already doing it.
+
+> One sentence on a risk worth knowing: because prompting is powerful, people sometimes hide instructions inside content (a shared doc, a webpage) — trying to redirect the AI without you knowing. We'll cover this properly in Module 12.
+
+---
+
+## Share
+
+Post your finished study prompt — not the AI's output, the *prompt itself*.
+
+Include: your subject + one sentence on what you noticed between your first run and your final one.
+
+---
+
+## The one thing to remember
+*Prompting is clear communication. Role + Context + Task + Format + Iterate beats a vague ask, every time.*
+
+---
+
+## Artifact
+**A reusable prompt you'll actually use this week.** The one from the Guided Lab — saved somewhere you'll find it. Every time you swap the topic, you're reusing the thinking you did here.
+
+---
+
+## Go Deeper →
+*(Verify links before publishing — URL check needed.)*
+- **Anthropic — "Prompt Engineering Overview"** Anthropic's own plain-English guide: clear instructions, examples, format, role, chain-of-thought. → https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+- **OpenAI — "Prompt Engineering Guide"** OpenAI's version of the same ideas — good for seeing that the recipe isn't Claude-specific. → https://platform.openai.com/docs/guides/prompt-engineering
+- **Ethan Mollick — "A Guide to Prompting AI"** A Wharton professor's honest, practical take on what works and what doesn't. Updated as the landscape changes. → https://www.oneusefulthing.org/p/a-guide-to-prompting-ai-for-what
+- **CSET — "The Surprising Power of Next-Word Prediction"** Why the model responds so strongly to framing — the mechanism behind why prompting works. → https://cset.georgetown.edu/article/the-surprising-power-of-next-word-prediction-large-language-models-explained-part-1/
+- **Learn Prompting** Free, open-source, community-maintained guide to prompt techniques. Start with the Basics section. → https://learnprompting.org
