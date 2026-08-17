@@ -1,5 +1,5 @@
 # Module 03 · What It's Great At, Where It Breaks
-**Owner:** Ayan  ·  **Status:** Good coverage  ·  **Emotional target:** healthy skepticism
+**Owner:** Ayan  ·  **Status:** Ready to review  ·  **Emotional target:** healthy skepticism
 **Input from:** Osman  ·  **Research brief:** `research-briefs/module-03-research-brief.md`  ·  **Research notes:** `research-notes/module-03.md`
 
 ## Spec (from sources/Master-Build-Plan.md)
@@ -30,17 +30,71 @@ Using AI well is mostly knowing when to trust it, when to check it, and when to 
 
 Think of AI as a very fast, very well-read research assistant. Extraordinary at some things. Unreliable at others. The split is more consistent than most people realize — which means you can predict it.
 
-**Where it reliably earns its keep:**
+For each capability below, there are three things worth knowing: where it saves you time, what the typical result actually looks like, and where you need to pay attention.
 
-- **Drafting and rewriting.** First drafts in seconds. Rewriting your rough paragraph into something cleaner. Adjusting tone. This is the most consistent capability across every model family — and it's strong.
-- **Summarizing material you give it.** Paste in a long article, a chapter, a document — it will pull out the key points accurately. The important word is *give it*: it's summarizing what's in front of it, not reaching into its training data to remember something.
-- **Explaining concepts.** Adjust for level, try a different analogy, explain just one part again. Good models are noticeably strong here, especially at adapting to how you learn.
-- **Brainstorming.** It generates volume fast. The ideas tend toward the expected before the unusual — but quantity gives you material to react to, which is often exactly what you need.
-- **Extracting and organizing from a document you paste.** Pull the key facts from meeting notes. Sort a list. Tag items. Anything where you've given it the source text and want it structured differently — reliable.
-- **Code help.** Strong for common, well-documented tasks. Weaker on edge cases and anything in niche or recent libraries. Most useful when you understand the code well enough to check whether what it wrote actually does what it claims.
-- **Answering questions about a document you upload.** With a PDF or text file in front of it, it can answer questions about that specific document accurately. Upload your textbook chapter, ask it to quiz you — it stays close to what you gave it.
+---
 
-**The pattern:** everything in this list involves something you've given it. The model working on your material, in your context, is reliably useful. The model reaching back into its training to produce facts it "remembers" is where the risks start.
+**Drafting and rewriting**
+
+*Where it saves time:* First drafts, rewrites, tone adjustments, reformatting. This is the most consistent capability across every model — it's genuinely strong.
+
+*Typical result:* A solid, polished-looking draft that's usually 70–90% of the way there.
+
+*Use carefully:* It defaults to a confident, clear style. If your voice is distinctive or your assignment has specific requirements, you'll need to steer it, or it'll drift toward generic. Give it your draft to improve rather than asking it to start from nothing — you'll get more of yourself in the result.
+
+---
+
+**Summarizing material you give it**
+
+*Where it saves time:* Paste in a long article, a chapter, a document — it pulls out the key points accurately and fast. This is one of the most reliable things it does.
+
+*Typical result:* A clean, accurate summary of what you actually gave it. The important word is *gave it*: it's working on what's in front of it, not reaching into memory.
+
+*Use carefully:* Ask it to summarize something you didn't paste — "what's in that book I mentioned?" — and you've crossed into the danger zone. It'll summarize something, but it might not be what the book actually says.
+
+---
+
+**Explaining concepts**
+
+*Where it saves time:* Adjust the level, try a different analogy, get the same idea explained three different ways until one clicks. Good models are genuinely strong at adapting to how you learn.
+
+*Typical result:* Often better than a textbook explanation — clearer, shorter, more direct.
+
+*Use carefully:* It sometimes simplifies to the point of leaving out important nuance, or it confidently explains something slightly wrong. If you're using it to understand something that will appear on a test or in an essay, double-check the key claims against a reliable source.
+
+---
+
+**Brainstorming**
+
+*Where it saves time:* It generates volume fast, which gives you material to react to. Even bad ideas can unstick a creative block.
+
+*Typical result:* A mix — some obvious, some genuinely useful. It tends toward the expected before the unusual, but quantity is the point here.
+
+*Use carefully:* Don't stop at the first list. Push back. Ask for more unusual ideas, ideas that break the obvious pattern, ideas from a completely different angle. The second and third round often gets more interesting.
+
+---
+
+**Extracting and organizing from a document you paste**
+
+*Where it saves time:* Pull the key facts from meeting notes. Sort a list. Tag items by category. Anything where you've given it the source text and want it structured differently — reliable.
+
+*Typical result:* Accurate and consistent, especially for clearly structured tasks.
+
+*Use carefully:* The better your instructions, the better the structure. "Organize this" is vague; "pull out every action item, who owns it, and the deadline" gets you something useful.
+
+---
+
+**Code help**
+
+*Where it saves time:* Strong for common, well-documented tasks. Writing a function, explaining what code does, spotting obvious errors.
+
+*Typical result:* Often correct for standard tasks — but "looks right" and "is right" are not the same thing.
+
+*Use carefully:* It's weakest on edge cases and anything in niche or recent libraries. And here's the honest truth: it's most useful when you understand the code well enough to check whether what it wrote actually does what it claims. Paste code you don't understand into production and you've outsourced a decision you can't evaluate.
+
+---
+
+**The pattern across all of these:** Give it your material, and it's reliable. Ask it to produce from memory, and verify everything. The draft is always a start, not a finish. Your job is editing. It just starts you further ahead.
 
 ---
 
@@ -48,37 +102,55 @@ Think of AI as a very fast, very well-read research assistant. Extraordinary at 
 
 **Hallucination — it invents things that don't exist, stated with total confidence.**
 
-This is the core failure mode and it hasn't gone away. When asked to produce specific facts, quotes, citations, or sources it hasn't been given, the model predicts what a plausible answer would look like — and a plausible answer looks exactly like a real one.
+This is the core failure mode and it hasn't gone away. When asked to produce specific facts, quotes, citations, or sources it hasn't been given, the model predicts what a plausible answer would look like. The problem: a plausible answer looks exactly like a real one.
 
-A student writing a paper on the Harlem Renaissance asked an AI for quotes from primary sources. It produced two: one from Langston Hughes, attributed to a 1926 essay in *The Crisis*; one from Zora Neale Hurston, attributed to a 1928 speech. Both had real-looking citations. The authors and publications are real. The quotes don't exist. The AI generated language that fit the period and style of each writer — plausible enough to pass as genuine — and attached credible-looking citations. The teacher couldn't find them because there was nothing to find.
+Here's the pattern — not one specific incident, but the same thing that happens to students regularly. A student writing a history essay asks AI for primary-source quotes. It produces three, complete with author, publication, year, and page number. All three look real. None of them exist. The author is real, the publication is real, the year is plausible — but the quotes were never written. The AI generated language that fit the period and style. Plausible enough to look genuine. If you paste it without checking, you've submitted fabricated evidence with total confidence.
 
-The model wasn't trying to deceive. It was doing exactly what it does: predicting what plausible text looks like. A plausible Langston Hughes quote with a real-sounding citation is a good next-word prediction. Plausible is not real.
+It's not just students. In 2023, lawyers at a New York firm used ChatGPT to research a case called *Mata v. Avianca*. The AI produced six case citations — real-looking case names, courts, years, page numbers. The lawyers submitted the brief. Opposing counsel flagged the citations. None of them existed. A federal judge sanctioned the lawyers $5,000 and ordered them to send copies of his opinion to each judge whose name had been falsely attached to an invented case. The AI wasn't trying to deceive. It was predicting plausible text. A plausible case citation looks exactly like a real one.
+
+The model wasn't doing something wrong — it was doing exactly what it does: predicting what plausible text looks like. Plausible is not real.
+
+---
 
 **Confident-wrong on facts, numbers, and calculations.**
 
 The fluency and the confidence are generated the same way the content is. There's no internal fact-checker that flags when it's guessing. A well-formatted answer with the steps shown in order is still wrong if any step is wrong — and with multi-step math especially, an error in step 2 propagates cleanly through steps 3, 4, and 5 in neat, professional-looking output.
 
+Law firms, financial analysts, and medical researchers have all discovered the same thing: showing the work doesn't mean the work is correct.
+
+---
+
 **Ambiguity — it fills in the blanks instead of asking.**
 
 When a prompt is underspecified, the model doesn't say "I'm not sure what you mean." It picks an interpretation and proceeds. "Write a history essay about the Civil War" → it picks a thesis, a length, an angle, a time period. May or may not match what you actually wanted. The verify habit starts here: did it answer the question you actually meant to ask?
+
+---
 
 **Training cutoff — it doesn't know what happened after training.**
 
 The model's knowledge has a hard cutoff date, typically months to over a year before you're using it. Anything that happened since is unknown to it unless the app adds web search. Even with web search, the base model's training still has that gap.
 
+---
+
 **Private information — it never knows your specific situation.**
 
 It has never seen your grades, your schedule, your teacher's expectations, your school's grading rubric, your personal circumstances. When it answers about your situation, it's generalizing from patterns. This is fine for broad questions and breaks down for anything specific to you.
 
+---
+
 **Bias — it absorbed the patterns in its training data, uneven ones included.**
 
-In 2018, Amazon built an AI tool to screen job applicants. It learned from ten years of resumes — and because most applicants to technical roles during those years were men, it learned to penalize resumes that mentioned women's organizations or came from all-women's colleges. Nobody programmed that in. The model found the pattern in the data ("applicant who got hired correlates with male applicant") and applied it. Amazon shut the tool down when they discovered it. The model was doing exactly what it was designed to do — finding patterns and applying them — on training data that carried a bias the designers hadn't intended to teach.
+In 2018, Amazon built an AI tool to screen job applicants. It learned from ten years of resumes — and because most applicants to technical roles during those years were men, it learned to penalize resumes that mentioned women's organizations or came from all-women's colleges. Nobody programmed that in. The model found the pattern in the data and applied it. Amazon shut the tool down when they discovered it.
+
+The same thing happened with HireVue, a video interviewing platform that used AI to score candidates partly on facial expressions and vocal tone. A privacy watchdog filed a federal complaint in 2019. HireVue quietly dropped the facial analysis feature in January 2021, saying it was "retiring" it — with no public acknowledgment that the feature had caused harm. The AI was doing what it was built to do. The problem was what it had been taught to look for.
 
 The same dynamic applies more subtly to the AI you use every day: it tends to give more detailed, confident answers about topics, places, and perspectives that were heavily represented in its training data. It can center certain cultural framings without flagging that other framings exist.
 
+---
+
 **Long conversations — it degrades as sessions go long.**
 
-This one trips up real users: the longer and more complex a conversation gets, the more the model starts losing the thread — repeating itself, contradicting earlier instructions, forgetting constraints you set twenty messages ago. It's a property of how context works in practice. If you notice the quality dropping in a long session, starting fresh with a summary of what you've established often helps.
+This one trips up real users: the longer and more complex a conversation gets, the more the model starts losing the thread — repeating itself, contradicting earlier instructions, forgetting constraints you set twenty messages ago. If you notice the quality dropping in a long session, starting fresh with a summary of what you've established often helps.
 
 ---
 
@@ -147,31 +219,34 @@ Then check the math yourself with a calculator. Walk through the model's steps. 
 
 **Check It When It Matters**
 
-1. **Does any specific fact, number, date, or name need to be right?**
-   If yes → look it up from a real source. Don't rely on the AI alone.
+1. **The output is clearly treated as a draft, production input, or final deliverable.**
+   Know what stage you're at. A draft you'll edit is different from something you're about to hand in or publish. Treat it accordingly.
 
-2. **Does it cite a source?**
-   If yes → find the actual source and confirm the quote or claim exists. Don't assume the citation is real.
+2. **Real facts, sources, and assets remain accurate.**
+   Anything that came from the AI's memory — quotes, citations, statistics, names, dates — needs a source check. Don't assume it's real because it looks real.
 
-3. **Did it answer the question you actually asked?**
-   Re-read your original prompt, then re-read the output. It may have answered a slightly different question.
+3. **Copy, claims, figures, links, and values match the source and stay editable where required.**
+   If the AI pulled from something you gave it, confirm it got it right. Numbers and figures are especially easy to misquote with total confidence.
 
-4. **Is there math in the output?**
-   If yes → redo the calculation yourself with a calculator, or walk through each step.
+4. **The result has been checked for quality, consistency, accessibility, and final-format usability.**
+   Read the whole output, not just the first paragraph. Check that the tone is consistent, the logic holds, and it'll actually work in the format it's going into.
 
-5. **Would it matter if this was wrong?**
-   If someone else will read it, or if you're making a decision based on it — verify before you use it.
+5. **The right owner has approved anything that publishes, shares, or finalizes.**
+   That means you, your teacher, or whoever needs to sign off — depending on what it is. Don't publish or submit something AI-produced without a human who's accountable for it taking one final look.
+
+6. **Would you stake your grade or reputation on this being accurate? If not, check it.**
+   This is the gut-check question. If the answer is "I'm not sure" — go verify.
 
 ---
 
-Save this somewhere you'll actually find it. The last question is the most important: it gives you permission to *not* check everything (most of the time, low stakes are fine), while making the stakes-based decision explicit when it counts.
+Save this somewhere you'll actually find it. Item 5 is the one people skip. Item 6 is the one that saves you.
 
 ---
 
 ## Go Deeper →
 *(Verify links before publishing — URL check needed.)*
 - **Reuters — "Amazon scraps secret AI recruiting tool that showed bias against women"** The primary source for the recruiting example in this module. Short, settled, and worth reading in full. → https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
-- **AI Incident Database** — A browsable, community-maintained database of real documented AI failures across categories. If you want to see more of these patterns: start here. → https://incidentdatabase.ai
+- **Washington Post — "HireVue drops facial expression analysis"** (January 2021) — covers HireVue retiring its facial analysis feature after the EPIC complaint. *(Verify live before publishing.)* → https://www.washingtonpost.com/technology/2021/01/19/hirevue-drop-facial-analysis/
+- **Reuters or NYT — Mata v. Avianca (2023)** — the documented case of lawyers submitting AI-fabricated citations and being sanctioned by a federal judge. *(Verify live — search "Mata v Avianca ChatGPT citations" for the primary court document or news coverage.)* → https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html
+- **AI Incident Database** — A browsable, community-maintained database of real documented AI failures across categories. If you want to see more of these patterns, start here. → https://incidentdatabase.ai
 - **"Hallucination is Inevitable" — Xu et al. (2024)** An academic preprint arguing (with technical backing) that hallucination is an inherent property of how LLMs are built — not a bug being fixed. The abstract is readable; the paper is for the technically curious. → https://arxiv.org/abs/2401.11817
-- **Common Sense Media — AI Literacy Resources** Age-appropriate materials on how AI works and how to use it well. → https://www.commonsense.org/education/ai/ai-literacy
-

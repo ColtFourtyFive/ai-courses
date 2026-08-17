@@ -1,5 +1,5 @@
 # Module 04 · Picking the Right Model
-**Owner:** Ayan  ·  **Status:** New  ·  **Emotional target:** discernment
+**Owner:** Ayan  ·  **Status:** Ready to review  ·  **Emotional target:** discernment
 **Research brief:** `research-briefs/module-04-research-brief.md`  ·  **Research notes:** `research-notes/module-04.md`
 
 ## Spec (from sources/Master-Build-Plan.md)
@@ -11,15 +11,15 @@
 ---
 
 # Module 4 · Picking the Right Model
-Emotional target: discernment   ·   Est. time: ~20 min
+Emotional target: discernment   ·   Est. time: ~25 min
 
 ## Why this matters
-There's no single "best AI." There's the right tool for the task. Picking by hype — or by habit — means you'll regularly get worse results than you could have, from the exact same options you already have access to. This module gives you a framework for choosing instead of guessing.
+There's no single "best AI." There's the right tool for the task you're actually doing. Picking by hype — or by habit — means you'll regularly get worse results than you could have, from the exact same options you already have access to. This module gives you a framework for choosing instead of guessing.
 
 ## What you'll walk away able to do
 - Explain why different AI models exist and when each tier is the right call
-- Compare two models on the same task and articulate what the better one did differently
-- Have a reusable scorecard for picking the right tool for any task
+- Run a proper 3-prompt test battery and describe what the difference actually was
+- Use a reusable scorecard for picking the right tool for any task
 
 ---
 
@@ -35,85 +35,134 @@ Every major AI provider — Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini
 | **Standard** (Sonnet, standard GPT, Gemini standard) | Most things: drafts, explanations, brainstorming | The daily driver |
 | **Heavy** (Opus, GPT top-tier, Gemini Pro) | Complex reasoning, careful arguments, high-stakes output | Slower, more likely paywalled |
 
-Plus a special mode most providers now offer: **reasoning mode** (Claude's extended thinking, OpenAI's o-series descendants, Gemini's thinking mode). Visible "thinking" before it answers. Better at math and multi-step logic. Not always better for quick questions or creative writing — the overhead isn't worth it there.
+Plus a special mode most providers now offer: **reasoning mode** (Claude's extended thinking, OpenAI's o-series, Gemini's thinking mode). The model thinks out loud before it answers. Better at multi-step math and logic. Not always worth it for quick questions or creative writing — the overhead isn't justified there.
 
-**The principle that doesn't expire:** use the lightest model that gets the job done. Using a heavy model for everything is like driving a pickup truck to buy a sandwich — you can, but you're wasting something. And using a fast model for something that needs careful reasoning is how you get arguments that sound good but fall apart under scrutiny.
+**The principle that doesn't expire:** use the lightest model that gets the job done. Using a heavy model for everything is like driving a pickup truck to get a sandwich — technically fine, but wasteful. And using a fast model for something that needs careful reasoning is how you get arguments that sound confident but fall apart when you look closely.
 
 ---
 
-### How to choose: four questions
+### How to choose: six questions
 
 **1. How hard is this task, really?**
 Quick and simple (look something up, reformat text, answer a clear factual question) → fast model is fine.
-Medium (draft an essay, summarize a document, serious brainstorming) → standard model.
+Medium (draft an essay, explain a concept, serious brainstorming) → standard model.
 Complex or high-stakes (multi-step math, careful argument, something where being wrong really matters) → heavy model or reasoning mode.
 
 **2. Do I need it right now?**
 Waiting at my keyboard → skip reasoning mode; use the fastest model that works.
 Walking away and coming back → use whatever tier the task actually warrants.
 
-**3. Is anything sensitive in what I'm pasting?**
-Real full name + personal details, another person's private info, school credentials, medical or financial information → stop. Remove the sensitive part or don't use AI for this task. This applies regardless of which model you pick.
+**3. Does cost matter for this task?**
+Free tier, unlimited tasks → any model that gets the job done.
+High volume (running the same thing many times) → lean toward faster, cheaper tiers.
+One important, low-frequency task → cost is irrelevant; use whatever tier fits.
+
+> **Context on cost:** between the cheapest and most expensive tiers, the price difference can be 18x to 66x per token processed. For a company sending millions of queries, this is enormous. For a student, it mostly means knowing which models are paywalled on free plans. *Flag for live verification before publishing — model pricing changes frequently.*
+
+**4. Is anything sensitive in what I'm pasting?**
+Real full name + personal details, another person's private info, medical or financial information, school credentials → stop. Remove the sensitive part or don't use AI for this. This applies regardless of which model you pick — the tier doesn't change the privacy question.
 Nothing sensitive → proceed.
 
-**4. Does this task need a special capability?**
+**5. Does this task need a special capability?**
 Images, audio, or video → confirm the model is multimodal before pasting.
 Current / live information → confirm web search is on.
 Code to run → confirm a code interpreter is available.
 None of the above → standard text model is fine.
 
+**6. Is this a long-document task?**
+Some models can hold a full novel's worth of text in a single conversation. Others cut off much sooner. If you're working with a long document — a whole textbook chapter, a lengthy report, 50,000 words of research — check whether the model supports long context before pasting. Using a model with a short context window for a long document means it quietly ignores the parts that didn't fit.
+
 ---
 
 ### One real-world example
 
-Early AI teams at companies discovered the same thing you're learning now: routing every task to the most powerful (and slowest, and most expensive) model produced mediocre results at high cost. The teams that did best learned to tier it — fast model for simple queries, heavy model for the tasks that actually needed it. They got better results on the complex tasks and stopped burning time and budget on the easy ones. The principle scales from a company's entire workflow down to a single homework session: match the model to the task.
+The open-source project RouteLLM (github.com/lm-sys/RouteLLM — available to verify) benchmarked exactly this approach: automatically routing easy queries to smaller models and hard queries to larger ones. Their published benchmarks show 40–80% cost reduction with little or no quality loss on the easy queries. The insight scales from a company's entire API budget down to a single homework session: match the model to the task.
+
+And this is the part worth holding onto: the easy queries didn't suffer. A fast model handles simple questions just as well as a heavy model. The heavy model earns its place on the hard questions — and *only* there.
 
 ---
 
-## Guided Lab: Head-to-Head Test
+## Guided Lab: 3-Prompt Head-to-Head Test
 
-You're going to run the same prompt in two different tools (or two tiers of the same tool) and see the difference. Not feel — *see*, with specific criteria.
+One impressive answer doesn't tell you much. One bad model can nail an easy question; one great model can stumble on a poorly framed one. The only way to actually compare two tools is to run the *same set of prompts* through both and score what you see.
 
-**Step 1 — Pick your task (2 min)**
+You're going to run three prompts in two different tools (or two tiers of the same tool) and score each one. Not feel — *see*, with specific criteria.
 
-Choose something real you have coming up: a test, a project, an essay. Write one sentence describing it:
-> *"I have a [history essay / AP Bio quiz / math unit test] in [X days] and I want to [do well / not fall behind / finish it without cramming]."*
+**Before you start — pick your two tools (2 min)**
 
-**Step 2 — The test prompt**
+Tool A and Tool B: two different apps, two different tiers of the same app, or the same tool with reasoning mode on vs. off.
 
-Use this exact prompt in both tools. Do not change it between rounds:
+> **If you only have one tool:** run it with reasoning mode on vs. off. Or try adding "You are an expert tutor" at the start vs. no setup. It's not a perfect two-model test, but it still builds the habit.
 
-> *"I have a [paste your sentence here]. Give me a concrete, day-by-day study plan that's actually doable. Be specific — not generic advice."*
+---
 
-**Round 1 (5 min):** Run it in Tool A. Read the full output. Fill in the scorecard below.
+**The three prompts**
 
-**Round 2 (5 min):** Run the exact same prompt in Tool B — a different app, a different tier, or the same tool with reasoning mode on. Read the full output. Fill in the scorecard.
+Run each one in *both* tools. Copy and paste the exact wording — no changes between rounds.
 
-> **If you only have one tool:** run it with reasoning mode on vs. off. Or try "You are an expert tutor" added at the start vs. no setup. It's not a perfect two-model test, but it still builds the habit of testing before trusting.
+**Prompt 1 — Simple task**
+> *"What is the capital of Australia?"*
 
-**Step 3 — Score both outputs (3 min)**
+**Prompt 2 — Medium task**
+> *"Explain how compound interest works, in plain language, with one example using real numbers."*
 
-For each output, score 1–3 on each dimension:
+**Prompt 3 — Complex / personal task**
+> *"Help me think through whether I should take AP Chemistry next year. I'm currently getting a B in regular chemistry, I'm interested in medicine as a future career, and I already have 3 other AP classes. What should I consider?"*
+
+**Why these three?** A fast model handles Prompt 1 just as well as a heavy model — the answer is the same either way. Prompt 2 is where you start to see quality differences in explanation and structure. Prompt 3 is where reasoning depth matters: the model has to hold several factors in tension, weigh trade-offs, and not just list talking points. Don't judge a model by one easy question.
+
+---
+
+**Score each prompt in each tool (1–3 per dimension)**
+
+#### Prompt 1 — Simple task
 
 | | Tool A | Tool B |
 |---|---|---|
-| **Specificity** — concrete steps, not vague advice? | __ / 3 | __ / 3 |
-| **Fit to your timeline** — works in the time you actually have? | __ / 3 | __ / 3 |
-| **Confidence calibration** — does it hedge what it can't know, or claim certainty about your exam? | __ / 3 | __ / 3 |
-| **Would I actually use it?** — could I start right now? | __ / 3 | __ / 3 |
+| **Accuracy** — correct answer? | __ / 3 | __ / 3 |
+| **Clarity** — stated it cleanly, no fluff? | __ / 3 | __ / 3 |
+| **Total** | __ / 6 | __ / 6 |
+
+#### Prompt 2 — Medium task
+
+| | Tool A | Tool B |
+|---|---|---|
+| **Accuracy** — compound interest explained correctly? | __ / 3 | __ / 3 |
+| **Plain language** — could someone with no finance background follow it? | __ / 3 | __ / 3 |
+| **Concrete example** — used real numbers, not vague generalities? | __ / 3 | __ / 3 |
+| **Total** | __ / 9 | __ / 9 |
+
+#### Prompt 3 — Complex / personal task
+
+| | Tool A | Tool B |
+|---|---|---|
+| **Depth of reasoning** — did it actually hold multiple factors in tension, or just list them? | __ / 3 | __ / 3 |
+| **Personalisation** — did it address the specific details given (B in chemistry, medicine interest, 3 other APs)? | __ / 3 | __ / 3 |
+| **Honest uncertainty** — did it hedge what it can't know (your energy levels, your school's support), or claim certainty? | __ / 3 | __ / 3 |
+| **Actionable** — would you actually know what to do or ask next after reading it? | __ / 3 | __ / 3 |
 | **Total** | __ / 12 | __ / 12 |
 
-**Step 4 — Write two sentences**
+---
 
-1. *"[Tool / tier that scored higher] did better because it ___."* (name one specific thing, not just "it was better")
-2. *"Neither did well at ___."* (there's usually something)
+**Write three sentences when you're done**
 
-**Success looks like:** you can point to one concrete thing the better output did differently — not "it felt more helpful" but "it broke the plan into specific days instead of giving me a topic list."
+1. *"On Prompt 1, both tools were [roughly equal / noticeably different] because ___."*
+2. *"The biggest quality gap I saw was on Prompt [2 / 3], where [Tool A / Tool B] did better because it ___."* (Name the specific thing — not "it was better" but "it broke down the trade-offs instead of just listing them.")
+3. *"One dimension I now check that I didn't before is ___."* (cost, context length, reasoning mode, accuracy on personal-context questions — pick one that actually came up.)
+
+---
+
+**Success looks like:** you ran all 3 prompts in both tools and can point to:
+- One prompt where both tools were roughly equal (usually Prompt 1)
+- One prompt where you noticed a specific quality difference — something in the wording, structure, or accuracy — and you can name it specifically
+- One dimension you now check that you didn't before (cost, context length, reasoning mode, etc.)
+
+**If all 3 prompts got identical scores in both tools:** run Prompt 3 again but add more complexity: *"I also have a chronic health condition that might affect my energy levels for a heavy course load."* That almost always produces a visible quality gap — because now the model has to weigh something it can't just look up.
 
 ---
 
 ## The one thing to remember
-*There's no best AI — there's the right one for the task. Test, don't guess.*
+*There's no best AI — there's the right one for the task. Test on a few examples, don't guess from one.*
 
 ---
 
@@ -136,15 +185,26 @@ Q2 — Do I need it right now?
  [ ] Yes, waiting at keyboard   → skip reasoning mode
  [ ] No, walking away           → reasoning mode OK if task warrants
 
-Q3 — Anything sensitive I'm pasting?
+Q3 — Does cost matter for this task?
+ [ ] Free tier, unlimited use           → any model that works
+ [ ] Running it many times (high vol)   → lean toward faster/cheaper tier
+ [ ] One-off, important task            → cost irrelevant; use best fit
+
+Q4 — Anything sensitive I'm pasting?
  [ ] Yes   → STOP. Remove the sensitive part first.
+            (This applies regardless of which model you pick.)
  [ ] No    → proceed
 
-Q4 — Special capability needed?
- [ ] Images / audio / video?   need multimodal
- [ ] Current / live info?      need web search ON
- [ ] Code to run?              need code interpreter
- [ ] None of the above         standard text is fine
+Q5 — Special capability needed?
+ [ ] Images / audio / video?    need multimodal
+ [ ] Current / live info?       need web search ON
+ [ ] Code to run?               need code interpreter
+ [ ] None of the above          standard text is fine
+
+Q6 — Long document involved?
+ [ ] Yes (long chapter, big report, 10,000+ words)
+         → check model supports long context before pasting
+ [ ] No  → proceed
 
 MY PICK: ________________________________
 (e.g., "Standard model, web search on, no reasoning mode needed")
@@ -152,7 +212,7 @@ MY PICK: ________________________________
 
 ---
 
-> **The model landscape changes fast.** Specific model names, which tier costs what, and what's available on free plans shift constantly. For a current snapshot — which tools are in which tier right now — see the **Model Landscape cheat sheet in the Codex** (updated quarterly). This scorecard stays valid regardless of what ships next; the cheat sheet keeps the tool names current.
+> **The model landscape changes fast.** Specific model names, which tier costs what, and what's available on free plans shift constantly. For a current snapshot, see the **Model Landscape cheat sheet in the Codex** (updated quarterly). This scorecard stays valid regardless of what ships next.
 
 ---
 
@@ -160,5 +220,5 @@ MY PICK: ________________________________
 *(Verify links before publishing — URL check needed.)*
 - **Anthropic — "Models overview"** Anthropic's own description of what each Claude tier is for and when to use it. → https://docs.anthropic.com/en/docs/models-overview
 - **OpenAI — "Models"** Same from OpenAI's side — pair with the Anthropic link to show the tier principle isn't brand-specific. → https://platform.openai.com/docs/models
+- **RouteLLM** The open-source project that benchmarked cost-aware model routing — 40–80% cost reduction with negligible quality loss on easy queries. Good reading for the technically curious. → https://github.com/lm-sys/RouteLLM
 - **Simon Willison's blog** An independent (no vendor affiliation) AI commentator who writes accessibly about practical model differences. Search for "model selection" or "when to use a smaller model." → https://simonwillison.net
-
