@@ -5,6 +5,8 @@
 ## Your job
 Produce the actual learner-facing content for **one module** — the explanations, activities, and artifact — to *ready-to-review* quality. You're writing the module, not planning it.
 
+**The course end-state:** an emotional promise ("anything you can imagine, you can build") plus an intellectual one — conceptual AI literacy that persists as tools change. Mental models don't expire; tool tricks do. Write toward both.
+
 ## Read first — and what to take from each
 1. **AI Fluency Master Build Plan** → your module's spec: what it covers, its blocks, its artifact, what to repurpose, its owner. *This is your assignment — start here.*
 2. **AI Fluency Course Curriculum** → the teaching substance; for the foundational modules it has full drafted content to build from. Also your reference for voice and for how each concept is explained.
@@ -45,7 +47,7 @@ Emotional target: [...]   ·   Est. time: [~X min]
 ```
 
 ## Voice (non-negotiable)
-Audience: teens ~13–16, no CS background, some nervous about AI. Plain, warm, direct, a little dry humor. Talk *to* them, never down to them, never corporate or academic.
+Audience: teens ~13–16, no CS background, some nervous about AI. Frame them as early professionals — these skills transfer directly to real work. Plain, warm, direct, a little dry humor. Talk *to* them, never down to them, never corporate or academic.
 - **Demystify first:** a plain-English "here's what's really going on" before any jargon. **Analogy before definition.** Short sentences.
 - **No textbook walls** — break concept with a demo or try-it. Honest about limits (it can be confidently wrong). No hype, no fear-mongering, no condescension.
 - Every module ends in something the learner **keeps or shows**.
@@ -78,7 +80,7 @@ Rule of thumb: give a teen example they can act on, **and** keep or introduce a 
 6. Add **Go Deeper** links and a **safety/verify** note if relevant. Estimate rough timing.
 
 ## Guardrails (the locked decisions)
-- **De-vendor:** concept-first, name tools as examples; Codex-specific detail only in the optional Builder tier.
+- **De-vendor:** concept-first, name tools as examples. Codex is the hands-on starting platform for Modules 0–4; both Codex and Claude ship as primary tools. Module 4 includes a lesson on when to use each (harness comparison). Do not strip Codex references from early modules — they belong there.
 - **Examples:** use both teen-relevant and real business ones (see above).
 - **Audience:** use the confirmed age band for pacing and examples.
 - **Don't pad.** If it reads like a textbook, it's wrong.

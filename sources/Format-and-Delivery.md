@@ -12,7 +12,7 @@ The whole thing is built from a small set of standard **blocks**. Every module i
 |---|---|---|
 | **Concept** | Short reading + visuals (and/or a 1–2 min video). Tight and plain, never textbook-length. | Teaching how something actually works. |
 | **Demo** | A worked example showing the behavior — embedded or run live in a session. | Making an abstract idea visible before they try it. |
-| **Try-It** | A tiny interactive task done *right in the page's AI sandbox* — poke it, see what happens. | Turning a concept into something they immediately feel. |
+| **Try-It** | A tiny interactive task done in the learner's AI platform (Codex or Claude) — poke it, see what happens. | Turning a concept into something they immediately feel. |
 | **Guided Lab** | A structured, step-by-step exercise: given inputs, clear steps, success criteria. Produces a small artifact. | Practicing a skill with guardrails. |
 | **Mission** | An open-ended challenge toward a goal, with light guidance. Playful, creative. | Building confidence and letting them make choices. |
 | **Project** | A bigger, self-directed build they keep. | Real capability and portfolio proof. |
@@ -66,9 +66,9 @@ Roughly a third concept-led, a third skill labs, a third open building — with 
 ## 4. The learner experience, end to end
 
 1. **Dashboard.** They see the path, where they are, and what's next.
-2. **Module.** They work through its blocks in order — read a little, watch a demo, then *do* it in the built-in sandbox. Reading and doing are interleaved, never separated into "study" then "apply."
+2. **Module.** They work through its blocks in order — read a little, watch a demo, then *do* it in their AI platform (Codex or Claude). Reading and doing are interleaved, never separated into "study" then "apply."
 3. **Artifact.** Every module produces something kept in their portfolio — a prompt, a tool, a build.
-4. **Live session.** Twice a week, the cohort meets: unsticking, a short teach, and **show-and-tell** where they demo what they built.
+4. **Live session.** 1–2x/week, the cohort meets. Structured rotation: each learner shares a build or finding; the group iterates off each other's ideas. Unsticking and a short teach are secondary to the sharing loop.
 5. **Progress.** Checkpoints and the growing portfolio make progress visible the whole way.
 6. **Next.** The path pulls them forward; difficulty and freedom rise as confidence does.
 
@@ -80,7 +80,7 @@ Self-paced content carries the learning; the live cohort carries the motivation 
 
 - **Learner dashboard & path** — the map, progress, and next step.
 - **Module player** — renders the blocks in sequence (reading, demos, labs, checkpoints).
-- **Embedded AI workspace (sandbox)** — where Try-Its, labs, and builds happen *in-page*, so there's no tool-switching or setup friction. This is the interactivity engine of the whole course.
+- **Hands-on activities (MP-style)** — learner gets context, scaffold, and step-by-step instructions to complete tasks in their AI platform (Codex or Claude). No in-page sandbox for pilot; learners use their chosen tool.
 - **Portfolio** — every artifact and build, collected automatically. The proof and the confidence-builder.
 - **Checkpoints & progress tracking** — light-touch, motivating, not exam-like.
 - **The Codex (reference library)** — the full, rigorous "how it works" depth, linked from every module's Go Deeper, browsable on its own.
@@ -92,8 +92,11 @@ Self-paced content carries the learning; the live cohort carries the motivation 
 ## 6. Delivery rhythm
 
 - **Self-paced core:** learners move through modules on the platform at their own pace.
-- **Cohort rhythm:** ~2 live sessions/week for progress checks, unsticking, a short teach, and show-and-tell.
-- **The blend is the moat:** interactive self-paced content (buildable and personalizable with AI) + a human layer that supplies accountability, momentum, and proof — the thing a video course or a PDF can't replicate.
+- **Cohort:** ~10–15 learners starting at the same time. Pilot = 1 learner first.
+- **Cohort rhythm:** ~2 live sessions/week. Structure: each learner shares a build or finding in a structured rotation (not just open Q&A) — then the group iterates off each other's ideas. Unsticking and a short teach are secondary.
+- **First deliverable:** a simple game (self-paced, runs alongside/after Module 0 as an extension of the demystify experience) — build in ~a day, add 2+ own changes, deploy to a shared link for group comparison. This is the community spark.
+- **Sharing loop (the community engine):** every significant build gets deployed to a shared link. Compare → discuss in live sessions → iterate based on what you saw. This reciprocation loop is the retention and motivation engine — what makes this more than a video course.
+- **The blend is the moat:** interactive self-paced content + the human layer (accountability, momentum, proof) + the sharing loop — none of which a video course or PDF can replicate.
 
 ---
 

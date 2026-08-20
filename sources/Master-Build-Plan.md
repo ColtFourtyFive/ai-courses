@@ -8,7 +8,7 @@
 
 ## 1. The vision in five lines
 
-- **Who:** teens (sold to parents) — a competitive-edge good, like tutoring was.
+- **Who:** teens ages 13–16, framed as early professionals. Parents are the buyers; demo day is the outcome they see. A competitive-edge skill — the proof is a shipped project.
 - **The promise:** *"Anything you can imagine, you can build — starting today."*
 - **The arc:** modules are ordered by emotional state — **fear → confidence → agency → mastery** — not by difficulty.
 - **The wedge:** teach the *mental model* + *prompting as the master key*, so learners can self-teach whatever ships next. Concepts don't expire; tool tricks do.
@@ -21,6 +21,10 @@
 1. **How far to de-vendor.** *Recommended:* Core modules teach the concept first and use Claude/ChatGPT/Codex as named examples; the optional Builder tier can stay more Codex-specific. This decides whether existing content is lightly edited or rewritten.
 2. **Scenario swap.** Replace every professional scenario in existing content (Nakamichi marketing, Shopify reports, manager 1:1s) with teen-relevant projects (a Discord tool, a study aid, a sports tracker, a small game).
 3. **Audience band.** Confirm the exact range (e.g. 13–16 vs. 12–17); it sharpens pacing and examples.
+4. **Platform.** Codex is the hands-on starting platform for Modules 0–4. Both Codex and Claude ship as primary tools. Module 4 adds a lens: when to use Codex vs. Claude (harness comparison). This is not a "how to use Codex" course — platform is the delivery vehicle, not the subject.
+5. **Format.** Hands-on activities are MP-style: learner gets context + scaffold + step-by-step instructions to complete tasks in their AI platform (Codex or Claude). No in-page sandbox. First deliverable is a simple game — runs alongside/after Module 0 as a self-paced extension of the demystify experience; build in ~a day, add own changes, deploy to shared link for group comparison.
+6. **Labs.** Only a FEW required deliverables across the course. Repurpose existing AI upskilling resources rather than build from scratch. Specific lab content TBD after research; pre-course Google Form gathers interest. Timeline set after lab count is fixed.
+7. **Capstone timing.** Seed the concept in Module 0 or 1. Learners commit to their specific project at end of Part 1 (after Module 4) — not before, they need to know what's possible first. Build spans Parts 2–4. Demo day is the parent-facing proof.
 
 ---
 
@@ -111,11 +115,7 @@ core content drafted + one interactive block sketched + the artifact defined. Th
 
 ## 5. How we're splitting the work
 
-We're both building toward **every module** — the split just says who drafts which one first. Each owner takes a module to *ready-to-review* on their own time; then **every module gets a joint review session** where we both build on it, align voice, and fold in the other's material. Where the other person has something to hand over, it's flagged **Input from** — pass it over *before* the review.
-
-The split is balanced by **effort, not count**: Ayan takes the concept/foundation spine (fewer modules, but the front half already has drafts in the Curriculum doc), and Osman takes the applied/building half (more modules, but mostly adapted from his own three workshops). Neither of us is starting cold.
-
-**Owner** is either Ayan or Osman.
+See ownership table in §6. Working notes (build order, review cadence, input handoffs) are in `sources/WORKING-NOTES.md`.
 
 ---
 
@@ -247,7 +247,7 @@ The split is balanced by **effort, not count**: Ayan takes the concept/foundatio
 
 ### Capstone · Build Something Real
 *Owner: Osman · Input from Ayan · Status: Partial (re-level) · Target: the "spring," made visible*
-- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**.
+- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**. Concept seeded in Module 0 or 1; learners commit at end of Part 1 (after Module 4); build spans Parts 2–4; demo day is the parent-facing proof.
 - **Repurpose:** the running-scenario structure (*Advanced Codex* Product Launch OS; *Beyond Code* campaign sprint) → swap for teen-relevant capstone options.
 - **Input from Ayan:** the demo-day format and evaluation-as-portfolio-"leveling" framing.
 - **Build new:** teen capstone options.
@@ -280,32 +280,3 @@ The split is balanced by **effort, not count**: Ayan takes the concept/foundatio
 
 ---
 
-## 7. Work plan until our next review
-
-The goal for this stretch: each of us gets as many of our modules to *ready-to-review* as we can, working the queue in order for momentum. No module is gated behind another person — we build in parallel and reconcile at review.
-
-**Ayan — the concept/foundation spine (build in this order):**
-1. **Module 1 → 2** — the core mental models; drafts exist in the Curriculum doc, so this is adapt-into-module-format + build the Try-Its.
-2. **Module 0** — the demystify opener; lock the exact 5-minute "unlock" build.
-3. **Module 5** — prompting; framing is drafted, build the Guided Lab and fold in Osman's brief + template.
-4. **Module 3 → 4 → 13.**
-- *Need from Osman first:* the *Work With AI* chatbot/agent contrast (M2), the *Beyond Code* limits + review checklist (M3), the operating brief + prompt template (M5).
-
-**Osman — the applied/building spine (build in this order):**
-1. **Module 8 → 9** — strongest existing coverage; fastest traction.
-2. **Module 7 → 10.**
-3. **Module 6 → 12 → 11 → capstone.**
-- *Need from Ayan first:* the teen-safety/anti-cheating framing (M12), the demo-day + leveling framing (capstone).
-
-**Do this before either of us starts:** settle the three Section 2 decisions (de-vendor level, scenario swap, audience band) — async is fine. They shape every module.
-
-**Swap the input assets early.** Trade the "Input from" material up front so no one is waiting on the other to reach ready-to-review.
-
----
-
-## 8. Review cadence
-
-- **One joint review session per module.** The owner brings their draft; we both build on it, align voice, and integrate the "Input from" material. Only after review does a module hit the full Definition of Done.
-- **First review session:** whatever's reached *ready-to-review* by then — likely Ayan's concept spine (0/1/2) and Osman's strongest two (8/9). Reviewing one from each half early lets us sanity-check that the voice lines up across the whole course before we're deep in.
-- **Standing rhythm:** meet to review whatever's ready since last time; update the status column after each session.
-- Between reviews we each build independently against our queue — no blocking on each other.

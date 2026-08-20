@@ -17,7 +17,7 @@ This document combines two drafts into one: the rigorous concept-and-skills curr
 2. Most modules pair a concept with something you actually do or build, because AI is learned by using it.
 3. Every module ends with one thing you can *keep or use* — a prompt, a tool, a small build. Progress is always visible.
 
-**The through-line.** Early modules exist to kill the fear and demystify. Middle modules build real skill. Later modules hand over real power. By the end, "anything you can imagine, you can build" is meant literally.
+**The through-line.** Early modules exist to kill the fear and demystify. Middle modules build real skill. Later modules hand over real power. By the end, "anything you can imagine, you can build" is meant literally. And more durably: learners understand the stack well enough to evaluate and use whatever comes next. Tool tricks expire; the mental model doesn't.
 
 ---
 
@@ -306,17 +306,11 @@ A few techniques worth knowing (kept short):
 
 ## Capstone — Build Something Real
 
+The concept is introduced in Module 0 or 1; learners commit to their specific project at the end of Part 1 (after Module 4), once they understand what's possible. Building spans Parts 2–4.
+
 Pick something ambitious you actually care about and build it using everything: a real tool, agent, or workflow that solves a real problem for you or someone you know. Define what "good" looks like, build the smallest version that works, test it, and note its limits.
 
 Then **demo it** — to the group, and to the people who care (parents/sponsors). This is the proof and the portfolio piece: the moment the whole arc becomes visible, to you and to them.
 
 ---
 
-## Build order (what to make first)
-
-1. **Fully build Modules 0–2 and 5** — the demystify opener plus the three foundational concepts (what an LLM is, the three layers, prompting). These carry the fear-killing and the core understanding; if they land, the course works.
-2. **Pilot those with a few real learners.** Capture where they get stuck, what times run long, and what actually creates the "oh, I get it" moment.
-3. **Revise from what you see**, then build the rest in order, testing each hands-on module with a real learner before moving on.
-4. **Define capstone options last**, once the earlier builds are stable.
-
-*The concept substance for every module already exists in full in the reference layer — building a module is turning that into the short Core plus one good activity.*
