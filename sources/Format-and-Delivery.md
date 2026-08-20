@@ -85,7 +85,7 @@ Self-paced content carries the learning; the live cohort carries the motivation 
 - **Checkpoints & progress tracking** — light-touch, motivating, not exam-like.
 - **The Codex (reference library)** — the full, rigorous "how it works" depth, linked from every module's Go Deeper, browsable on its own.
 - **Templates & resources** — reusable prompts, workflow templates, starter files.
-- **Live cohort layer** — scheduled sessions with a structured sharing rotation (each learner demos a build or finding; the group iterates off each other's ideas), a facilitator, and a community channel where learners share builds between sessions. The sharing loop is the retention and motivation engine.
+- **Live cohort layer** — scheduled sessions with a structured sharing rotation (each learner demos a build or finding; the group iterates off each other's ideas), a facilitator, and a community channel where learners share builds between sessions.
 
 ---
 
@@ -94,9 +94,8 @@ Self-paced content carries the learning; the live cohort carries the motivation 
 - **Self-paced core:** learners move through modules on the platform at their own pace.
 - **Cohort:** ~10–15 learners starting at the same time. Pilot = 1 learner first.
 - **Cohort rhythm:** ~2 live sessions/week. Structure: each learner shares a build or finding in a structured rotation (not just open Q&A) — then the group iterates off each other's ideas. Unsticking and a short teach are secondary.
-- **First deliverable:** a simple game (self-paced, runs alongside/after Module 0 as an extension of the demystify experience) — build in ~a day, add 2+ own changes, deploy to a shared link for group comparison. This is the community spark.
-- **Sharing loop (the community engine):** every significant build gets deployed to a shared link. Compare → discuss in live sessions → iterate based on what you saw. This reciprocation loop is the retention and motivation engine — what makes this more than a video course.
-- **The blend is the moat:** interactive self-paced content + the human layer (accountability, momentum, proof) + the sharing loop — none of which a video course or PDF can replicate.
+- **First deliverable:** a simple game (self-paced, runs alongside/after Module 0 as an extension of the demystify experience) — build in ~a day, add 2+ own changes, deploy to a shared link for group comparison.
+- **Sharing loop:** every significant build gets deployed to a shared link. Compare → discuss in live sessions → iterate based on what you saw.
 
 ---
 

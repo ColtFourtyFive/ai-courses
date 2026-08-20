@@ -4,7 +4,7 @@
 
 This document combines two drafts into one: the rigorous concept-and-skills curriculum, and the demystify-first, fear-killing framing. It keeps the substance of the first and the accessibility of the second.
 
-**Who this is for.** Teens 13–16, no CS background. Frame them as early professionals — these skills transfer directly to real work, and that's the value prop. Parents are the buyers; demo day is the outcome they see.
+**Who this is for.** Teens 13–16, no CS background. Frame them as early professionals — these skills transfer directly to real work.
 
 ---
 
@@ -312,7 +312,7 @@ The concept is introduced in Module 0 or 1; learners commit to their specific pr
 
 Pick something ambitious you actually care about and build it using everything: a real tool, agent, or workflow that solves a real problem for you or someone you know. Define what "good" looks like, build the smallest version that works, test it, and note its limits.
 
-Then **demo it** — to the group, and to the people who care (parents/sponsors). This is the proof and the portfolio piece: the moment the whole arc becomes visible, to you and to them.
+Then **demo it** — to the group and to the people who care. This is the proof and the portfolio piece: the moment the whole arc becomes visible, to you and to them.
 
 ---
 

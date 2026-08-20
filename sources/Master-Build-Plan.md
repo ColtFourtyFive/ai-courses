@@ -8,7 +8,7 @@
 
 ## 1. The vision in five lines
 
-- **Who:** teens ages 13–16, framed as early professionals. Parents are the buyers; demo day is the outcome they see. A competitive-edge skill — the proof is a shipped project.
+- **Who:** teens ages 13–16, framed as early professionals.
 - **The promise:** *"Anything you can imagine, you can build — starting today."*
 - **The arc:** modules are ordered by emotional state — **fear → confidence → agency → mastery** — not by difficulty.
 - **The wedge:** teach the *mental model* + *prompting as the master key*, so learners can self-teach whatever ships next. Concepts don't expire; tool tricks do.
@@ -24,7 +24,7 @@
 4. **Platform.** Codex is the hands-on starting platform for Modules 0–4. Both Codex and Claude ship as primary tools. Module 4 adds a lens: when to use Codex vs. Claude (harness comparison). This is not a "how to use Codex" course — platform is the delivery vehicle, not the subject.
 5. **Format.** Hands-on activities are MP-style: learner gets context + scaffold + step-by-step instructions to complete tasks in their AI platform (Codex or Claude). No in-page sandbox. First deliverable is a simple game — runs alongside/after Module 0 as a self-paced extension of the demystify experience; build in ~a day, add own changes, deploy to shared link for group comparison.
 6. **Labs.** Only a FEW required deliverables across the course. Repurpose existing AI upskilling resources rather than build from scratch. Specific lab content TBD after research; pre-course Google Form gathers interest. Timeline set after lab count is fixed.
-7. **Capstone timing.** Seed the concept in Module 0 or 1. Learners commit to their specific project at end of Part 1 (after Module 4) — not before, they need to know what's possible first. Build spans Parts 2–4. Demo day is the parent-facing proof.
+7. **Capstone timing.** Seed the concept in Module 0 or 1. Learners commit to their specific project at end of Part 1 (after Module 4) — not before, they need to know what's possible first. Build spans Parts 2–4.
 
 ---
 
@@ -247,7 +247,7 @@ See ownership table in §6. Working notes (build order, review cadence, input ha
 
 ### Capstone · Build Something Real
 *Owner: Osman · Input from Ayan · Status: Partial (re-level) · Target: the "spring," made visible*
-- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**. Concept seeded in Module 0 or 1; learners commit at end of Part 1 (after Module 4); build spans Parts 2–4; demo day is the parent-facing proof.
+- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**. Concept seeded in Module 0 or 1; learners commit at end of Part 1 (after Module 4); build spans Parts 2–4.
 - **Repurpose:** the running-scenario structure (*Advanced Codex* Product Launch OS; *Beyond Code* campaign sprint) → swap for teen-relevant capstone options.
 - **Input from Ayan:** the demo-day format and evaluation-as-portfolio-"leveling" framing.
 - **Build new:** teen capstone options.
