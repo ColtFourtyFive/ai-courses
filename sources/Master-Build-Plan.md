@@ -124,6 +124,7 @@ See ownership table in §6. Working notes (build order, review cadence, input ha
 #### Module 0 · Start Here: Demystify
 *Owner: Ayan · Status: New · Target: fear → "wait, I made that?"*
 - **Covers:** no theory; a first real build in ~15–20 min by describing it in plain English; the reframe that the wall is smaller than it looks; a 20-second map of where the course goes.
+- **Platform:** Codex leads, starting from this module (per §2.4). **Design constraint:** Codex outputs code/diffs, not a hosted live preview — the "wait, I made that?" payoff must come from the learner *running* their build and seeing it do something real (a script with visible output, or a file that opens and works in their browser), not from a preview panel rendering automatically.
 - **Repurpose:** the "pick one stage and make a first version" hands-on pattern from *Beyond Code* (format only).
 - **Build new:** the exact 5-minute "unlock" build (needs to be jaw-dropping *and* dead-simple); 3–4 teen-relevant build options; the opening framing.
 - **Blocks:** Mission (guided) + minimal Concept.

@@ -4,14 +4,15 @@
 
 ## Spec (from sources/Master-Build-Plan.md)
 - **Covers:** no theory; a first real build in ~15–20 min by describing it in plain English; the reframe that the wall is smaller than it looks; a 20-second map of where the course goes.
+- **Platform:** Codex leads, starting from this module (per §2.4). **Design constraint:** Codex outputs code/diffs, not a hosted live preview — the "wait, I made that?" payoff must come from the learner *running* their build and seeing it do something real (a script with visible output, or a file that opens and works in their browser), not from a preview panel rendering automatically.
 - **Repurpose from:** *Beyond Code* "pick one stage and make a first version" hands-on pattern (format only).
 - **Build new:** the exact 5-minute "unlock" build (jaw-dropping AND dead-simple); 3–4 teen-relevant build options; the opening framing.
 - **Blocks:** Mission (guided) + minimal Concept.
 - **Artifact:** a working thing, made day one.
 
 ### Owner notes (resolve before publishing)
-- **Tool to name:** The builds below rely on AI tools that show interactive HTML in a live preview panel (Claude.ai's Artifacts panel is the primary example). Specify which tool(s) the course uses and include the exact UI instruction — e.g., *"In Claude.ai, interactive builds appear in a preview panel on the right side of the screen."*
-- **Fallback:** If the tool gives code instead of a running preview, the module includes a fallback instruction — verify it matches the tool you're recommending.
+- **Platform — RESOLVED:** Codex is the primary starting platform and leads from Module 0 (per Master-Build-Plan §2.4). Both Codex and Claude ship as primary tools; Module 4 is the "when to use which" lesson. This is no longer an open flag.
+- **Design constraint carried into the spec above:** because Codex's default output is code/diffs, not a rendered preview, the build instructions and steps in the section below (written around a live-preview-and-click flow) still need a rewrite pass to match — running a script or opening a generated file, not watching a panel render. Flagging this explicitly as the remaining TODO on this file; not resolved by this edit.
 - **Account creation:** Draft assumes a signed-in account. If learners create accounts in this session, add ~5 min to the estimate.
 - **Sharing mechanic:** The artifact works best with a cohort share feed or screenshot submission. If the platform doesn't have this yet, the fallback is: *"Copy your build prompt + a description of what appeared into your notes."*
 
