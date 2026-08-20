@@ -148,7 +148,7 @@ Two industries. Two sets of professionals. Same finding: **prompt quality has re
 
 Watch the recipe build, one piece at a time.
 
-**Start with the weak prompt.** Open your AI sandbox and run this exactly:
+**Start with the weak prompt.** Open your AI tool (Codex or Claude) and run this exactly:
 
 > `help me study for my quiz`
 

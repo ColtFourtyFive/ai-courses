@@ -316,7 +316,7 @@ They have a strong prompt, they want to improve the output, but they don't know 
 
 ### Recommended Try-It design
 
-1. Show the weak prompt: `"help me study for my quiz"` (don't explain it yet — just show it, run it in the sandbox, see what comes back)
+1. Show the weak prompt: `"help me study for my quiz"` (don't explain it yet — just show it, run it in their AI tool, see what comes back)
 2. Annotate the output: "Here's what you get. What's missing? It doesn't know: what subject, what level, what kind of help, how long you have..."
 3. Build the strong prompt on the page, one element at a time:
    - Add Role → re-run → see change

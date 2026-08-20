@@ -304,7 +304,7 @@ Based on the documented "build-first" format that works:
 5. Optional: "Want to change something? Just tell it." (introduces iteration without requiring it)
 6. "Share your output below." (or cohort feed / show-and-tell mechanic, per Format-and-Delivery.md's social layer)
 
-No step-by-step instructions for how to use the AI tool itself — that introduces friction. The instruction is just "go to [tool name], start a new chat, paste the prompt." If the module lives in a product with an embedded AI sandbox, skip even that.
+No step-by-step instructions for how to use the AI tool itself — that introduces friction. The instruction is just "go to [tool name], start a new chat, paste the prompt."
 
 ### Documented examples of build-first course openers that worked
 

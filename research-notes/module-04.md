@@ -349,11 +349,11 @@ The Master Build Plan explicitly calls for "a separately maintained cheat sheet"
 
 **Recommendation:** design the Core module to be fully principle-based (tiers, criteria, lab) and create the cheat sheet as a *Codex* document that lives in Go Deeper — updated by the course owner quarterly. The module itself should reference it: "For a current list of which tools are in which tier (it changes), see the Model Landscape cheat sheet in the Codex." This separates the stable (the module) from the fast-moving (the rankings/costs), exactly as the Master Build Plan intends.
 
-**Q5: Does the Guided Lab need an in-module sandbox, or can it live outside (in whatever tool the teen already uses)?**
+**Q5: How does the Guided Lab work given that it compares two tools?**
 
-Format-and-Delivery.md specifies that labs happen "in the built-in AI sandbox." But Module 4's lab is explicitly about comparing two different tools — which by definition can't both live in a single sandbox.
+The course uses MP-style format (no in-page sandbox — learner uses their own AI platform). Module 4's Guided Lab is actually a natural fit for this: the learner opens Codex in one tab, Claude in another, runs the same prompt in both, and scores each. The module provides the scorecard and prompt template; the AI interaction happens in the learner's tools as normal.
 
-**Recommendation:** flag to the owner that Module 4's Guided Lab is likely an exception to the sandbox model. The learner needs to open two tabs (or two tools) and run the same prompt in both. The module player can still host the scorecard and the prompt template; the actual AI interaction happens externally. This needs owner awareness, as it's slightly more friction than a standard sandbox lab.
+Module 4 now explicitly includes the harness comparison as a core lesson (when to use Codex vs. Claude, why the answer depends on the task). The lab is the hands-on version of that lesson — same task, two harnesses, compare. No sandbox exception needed; this is exactly what MP-style is designed for.
 
 **Q6: How should the module handle the teen who only has access to one tool?**
 

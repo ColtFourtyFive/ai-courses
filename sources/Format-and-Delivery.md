@@ -85,7 +85,7 @@ Self-paced content carries the learning; the live cohort carries the motivation 
 - **Checkpoints & progress tracking** — light-touch, motivating, not exam-like.
 - **The Codex (reference library)** — the full, rigorous "how it works" depth, linked from every module's Go Deeper, browsable on its own.
 - **Templates & resources** — reusable prompts, workflow templates, starter files.
-- **Live cohort layer** — scheduled sessions, show-and-tell, a facilitator, and a community channel where learners share builds between sessions.
+- **Live cohort layer** — scheduled sessions with a structured sharing rotation (each learner demos a build or finding; the group iterates off each other's ideas), a facilitator, and a community channel where learners share builds between sessions. The sharing loop is the retention and motivation engine.
 
 ---
 

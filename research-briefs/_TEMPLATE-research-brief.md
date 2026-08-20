@@ -24,7 +24,7 @@ You are a research sub-agent for one module of the AI Fluency course (teens ~13�
    - *Teen-relevant:* [what a 13–16-year-old would actually want here]
    - *Real business:* [a real example of how a company/worker uses this — the professional window]
 3. **Find the best analogy / demo.** [What makes this click for a nervous beginner? Gather candidates.]
-4. **Design the interactive block.** [The Try-It / Lab / Mission the spec calls for — gather what's needed to make it work in-page.]
+4. **Design the interactive block.** [The Try-It / Lab / Mission the spec calls for — gather what's needed to make it work in the learner's AI platform (Codex or Claude).]
 5. **Surface what's uncertain or contested.** [Open questions, where sources disagree, what needs the owner's judgment.]
 6. **Gather Go Deeper references.** [3–5 credible sources for the reference layer, with links.]
 

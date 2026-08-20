@@ -4,6 +4,8 @@
 
 This document combines two drafts into one: the rigorous concept-and-skills curriculum, and the demystify-first, fear-killing framing. It keeps the substance of the first and the accessibility of the second.
 
+**Who this is for.** Teens 13–16, no CS background. Frame them as early professionals — these skills transfer directly to real work, and that's the value prop. Parents are the buyers; demo day is the outcome they see.
+
 ---
 
 ## How the course works

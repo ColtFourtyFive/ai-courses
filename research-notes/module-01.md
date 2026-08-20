@@ -50,7 +50,7 @@ Candidates gathered, with sourcing:
 
 ## Interactive block
 
-Brief calls for: run one prompt three times, changing a single word of the setup each time (mood / setting / audience), and watch how much the output shifts. Designed to work as copy-paste starter prompts in a simple embedded AI sandbox.
+Brief calls for: run one prompt three times, changing a single word of the setup each time (mood / setting / audience), and watch how much the output shifts. Designed to work as copy-paste starter prompts in the learner's AI platform (Codex or Claude).
 
 **Template A — mood swap.** Base prompt (paste once, then just swap the bracketed word and re-run):
 > "Write a two-sentence text message from a student telling their friend they can't come to the party tonight. The student is feeling **[EXCITED]**."
@@ -69,7 +69,7 @@ Brief calls for: run one prompt three times, changing a single word of the setup
 
 **Design notes for the writer/build:**
 - Keep exactly one bracketed word/phrase swappable per template — that's the whole point (isolate the variable).
-- Recommend the module literally bold or highlight the swappable word in the UI so it's unmissable in a simple embedded sandbox (no need for anything fancier than a text box + "run" button, 3x).
+- Recommend the module literally bold or highlight the swappable word so it's unmissable (no need for anything fancier — learner pastes into their AI tool and runs 3x).
 - Success criteria for the artifact (per Master-Build-Plan: "experiment log — 3 cases where changing one word flipped the output"): learner should be able to paste in the 3 outputs per template (or across templates) and write one sentence per case on what changed and why (tying back to "predicting what plausibly comes next given the words in front of it").
 - Templates A/B/C give the writer three ready options — recommend picking ONE as the primary Try-It (not all three) to avoid padding, per AGENTS.md "don't pad" guardrail. Template A (mood swap via text message) is likely the most teen-native/fastest to grasp; Template C (audience swap) most directly demonstrates the "brilliant intern" analogy (an intern also changes how it explains something based on who's asking). Flagging both as strong candidates for the owner to pick between.
 

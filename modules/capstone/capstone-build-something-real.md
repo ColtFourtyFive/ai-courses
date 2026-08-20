@@ -3,7 +3,7 @@
 **Input from:** Ayan  ·  **Research brief:** `research-briefs/module-capstone-research-brief.md`  ·  **Research notes:** `research-notes/module-capstone.md`
 
 ## Spec (from sources/Master-Build-Plan.md)
-- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**.
+- **Covers:** pick an ambitious real thing; define what "good" looks like; build the smallest version that works; test it; note its limits; **demo day**. Concept seeded in Module 0 or 1; learners commit to their specific project at end of Part 1 (after Module 4); building spans Parts 2–4; demo day is the parent-facing proof.
 - **Repurpose from:** the running-scenario structure (*Advanced Codex* Product Launch OS; *Beyond Code* campaign sprint) — Source-Material-Library.md → Capstone.
 - **Input from Ayan:** the demo-day format + evaluation-as-portfolio-"leveling" framing.
 - **Build new:** teen capstone options.
