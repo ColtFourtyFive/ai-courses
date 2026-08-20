@@ -52,3 +52,11 @@ The split is balanced by **effort, not count**: Ayan takes the concept/foundatio
 4. **Define capstone options last**, once the earlier builds are stable.
 
 *The concept substance for every module already exists in full in the reference layer — building a module is turning that into the short Core plus one good activity.*
+
+---
+
+## Business rationale (why the sharing mechanic matters — not agent-facing)
+
+> Kept here, not in the shared source docs, because "retention" and "moat" language reads as growth-product framing that primes agents toward compliance/child-safety tangents when combined with "parents are the buyers." The insight is real — it just doesn't belong in files agents read to build modules.
+
+The sharing loop (every significant build deployed to a shared link, compared and discussed in live sessions) is more than a nice-to-have: it's the retention and motivation engine — the reciprocation loop is what makes this more than a video course. The blend of interactive self-paced content + the human layer (accountability, momentum, proof) + the sharing loop is the moat — none of it is replicable by a video course or a PDF.
