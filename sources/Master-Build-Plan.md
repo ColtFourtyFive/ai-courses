@@ -18,7 +18,7 @@
 
 ## 2. Decisions to lock before building
 
-1. **How far to de-vendor.** *Recommended:* Core modules teach the concept first and use Claude/ChatGPT/Codex as named examples; the optional Builder tier can stay more Codex-specific. This decides whether existing content is lightly edited or rewritten.
+1. **How far to de-vendor.** *Recommended:* Core modules teach the concept first and use Claude/ChatGPT/Codex as named examples (Codex is the starting platform, not a vendor to hide). The optional Builder tier can go *deeper* on Codex-specific features — it's a depth increase, not the place where Codex first appears. This decides whether existing content is lightly edited or rewritten.
 2. **Scenario swap.** Replace every professional scenario in existing content (Nakamichi marketing, Shopify reports, manager 1:1s) with teen-relevant projects (a Discord tool, a study aid, a sports tracker, a small game).
 3. **Audience band.** Confirm the exact range (e.g. 13–16 vs. 12–17); it sharpens pacing and examples.
 4. **Platform.** Codex is the hands-on starting platform for Modules 0–4. Both Codex and Claude ship as primary tools. Module 4 adds a lens: when to use Codex vs. Claude (harness comparison). This is not a "how to use Codex" course — platform is the delivery vehicle, not the subject.
@@ -96,7 +96,7 @@ We reviewed the three workshop sites already built and mapped every piece agains
 ## 4. How to build a module (shared system)
 
 **Block types** (a module is assembled from these):
-Concept (short read/visual) · Demo (worked example) · Try-It (tiny in-page interactive) · Guided Lab (structured exercise) · Mission (open challenge) · Project (bigger self-directed build) · Checkpoint (understanding check) · Share (show-and-tell) · Go Deeper (Codex link).
+Concept (short read/visual) · Demo (worked example) · Try-It (tiny task done in the learner's AI platform) · Guided Lab (structured exercise) · Mission (open challenge) · Project (bigger self-directed build) · Checkpoint (understanding check) · Share (show-and-tell) · Go Deeper (Codex link).
 
 Interactivity runs on a spectrum: **Try-It → Guided Lab → Mission → Project** (guided → free). Modules move learners rightward as confidence grows. Every module ends in something the learner **keeps or shows**.
 
@@ -154,8 +154,8 @@ See ownership table in §6. Working notes (build order, review cadence, input ha
 
 #### Module 4 · Picking the Right Model
 *Owner: Ayan · Status: New · Target: discernment*
-- **Covers:** there's no single "best AI"; choose by task/difficulty, speed, cost, privacy, and extras (long context, reasoning); test two options on the *same* few examples instead of trusting one impressive answer.
-- **Build new:** a light, current model-landscape overview; the scorecard lab; the head-to-head test. *Note: this content ages fast — keep it principle-based plus a separately maintained cheat sheet.*
+- **Covers:** there's no single "best AI"; choose by task/difficulty, speed, cost, privacy, and extras (long context, reasoning); test two options on the *same* few examples instead of trusting one impressive answer. **Also covers the harness comparison: when to use Codex vs. Claude** — this is the specific lesson promised by Decision 4. Learners leave with a concrete framework for the two primary tools, not just abstract tier logic.
+- **Build new:** a light, current model-landscape overview; the scorecard lab; the head-to-head test (run same prompt in Codex and Claude, compare). *Note: this content ages fast — keep it principle-based plus a separately maintained cheat sheet.*
 - **Blocks:** Concept (brief) · Guided Lab.
 - **Artifact:** a reusable model-selection scorecard.
 

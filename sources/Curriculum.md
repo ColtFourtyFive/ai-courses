@@ -142,11 +142,11 @@ The whole ladder:
 
 **Why this matters.** There isn't one "best AI." There's the right tool for the task. Knowing how to choose stops you from overpaying, waiting too long, or trusting the wrong one.
 
-**What's covered.** Choosing by task type and difficulty, speed, cost, privacy, and whether you need extras like long context or reasoning. The idea of testing two options on the *same* few examples instead of trusting one impressive answer.
+**What's covered.** Choosing by task type and difficulty, speed, cost, privacy, and whether you need extras like long context or reasoning. The idea of testing two options on the *same* few examples instead of trusting one impressive answer. **And a concrete harness comparison:** when to reach for Codex vs. Claude — the two primary tools learners are already using — and why the answer depends on the task, not on which is "better."
 
-**Try it.** Run the same real task through two models with the same short test set; note which wins and why.
+**Try it.** Run the same real task in both Codex and Claude; score each on the same criteria; articulate why you'd pick one over the other for this type of task.
 
-**Walk away with.** A simple scorecard you can reuse to pick a model for any task.
+**Walk away with.** A simple scorecard you can reuse to pick a model for any task, plus a personal framework for when Codex vs. Claude fits your work.
 
 **Go deeper →** the model landscape (general, reasoning, small, embedding, open-weight), hosted vs. local.
 
