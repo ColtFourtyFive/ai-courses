@@ -72,7 +72,9 @@ The "body" wrapped around the brain — the app, its tools, the loop, all the wi
 
 This is why the *same* underlying model can feel dramatically more capable in one tool than another. A well-built harness gets more out of the same brain. It's also why "which model?" matters less than most people think, and "how it's wired up" matters more.
 
-Think of it like a musician. You wouldn't judge their talent purely in isolation — you'd also care about what instrument they have, whether the sound system is good, what the venue is like. The harness is all of that.
+Think of it like a musician. You wouldn't judge their talent purely in isolation — you'd also care about what instrument they have, whether the sound system is good, what the venue is like. The harness is all of that — it's an analogy to build the picture, not a claim about how the tools work internally.
+
+The Try-It below shows you the foundational piece of this: that a tool or capability belongs to the app wrapped around the model, not the model itself. The fuller version of the harness idea — why one agent setup gets noticeably more out of the *same* brain than another — is easiest to actually feel once you're using agent-tier tools like Claude Code or Codex, later in the course. This module gets you the concept; the feel of it comes later.
 
 ---
 
@@ -110,7 +112,7 @@ This is the agent loop made visible: plan → act → check → decide next step
 
 ## Try-It
 
-Now you do something. This one shows you the harness layer directly — specifically, what changes when the app turns a tool on or off.
+Now you do something. This shows you one concrete piece of the harness idea: what changes when the app turns a tool on or off.
 
 **Step 1.** Open any AI assistant that has a **web search toggle** (Claude.ai, ChatGPT, and Gemini all have this — look for a web, search, or globe icon in the interface).
 
@@ -126,7 +128,7 @@ Now you do something. This one shows you the harness layer directly — specific
 
 Keep that sentence — it's your checkpoint for this module.
 
-**What success looks like:** you can name which layer changed (the harness — the app layer, not the model) and you can explain why the brain itself didn't change at all.
+**What success looks like:** you can name which layer changed (the app layer — part of what we're calling the harness) and explain why the brain itself didn't change at all. You don't need to have felt the *full* harness idea yet (why one agent setup outperforms another on the same model) — that comes later, once you're using agent-tier tools directly.
 
 **Want to see the agent loop in action?** Open Claude.ai and give it a multi-step problem: plan a project, work through a complex set of decisions, or debug something step by step. Watch it plan before it acts. Notice when it checks its own work before continuing. That plan → act → check sequence is the agent loop made visible — you're watching Level 3 in real time.
 
@@ -176,7 +178,7 @@ The test: can you point at any feature and say clearly whether it lives in the b
 
 ## Go Deeper →
 - **Anthropic — "Building Effective Agents"** What distinguishes a true agent from a workflow. → https://www.anthropic.com/research/building-effective-agents
-- **Simon Willison — simonwillison.net** Search for "agents" — Willison writes the clearest short takes on what the term actually means and how practitioners use it. (No specific post linked here — his blog is frequently updated and the search is the reliable entry point.) *(Verify before publishing.)*
-- **Anthropic — "Effective harnesses for long-running agents"** Anthropic's own engineers writing about harnesses — where the term comes from and what a good one looks like. → https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents *(Verify before publishing.)*
-- **Claude Help Center — Memory and search in Claude.ai** See how a real product describes its memory and search as app features, not model features — exactly the point of this module. → https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context *(Verify before publishing.)*
-- **Hugging Face blog** — Search "agent glossary" for precise distinctions between model, scaffold, harness, and agent as the field uses them in practice. *(Verify before publishing.)*
+- **Simon Willison — "I think 'agent' may finally have a widely enough agreed upon definition to be useful jargon now"** The post behind this module's agent definition ("an LLM agent runs tools in a loop to achieve a goal") — a respected independent AI engineer's take on why this definition stuck. → https://simonwillison.net/2025/Sep/18/agents/
+- **Anthropic — "Effective harnesses for long-running agents"** Anthropic's own engineers using "harness" as their working term, in a specific real system for keeping a coding agent on track across long sessions — good evidence the word isn't just community slang. → https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+- **Claude Help Center — Memory and search in Claude.ai** See how a real product describes its memory and search as app features, not model features — exactly the point of this module. → https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context
+- **Hugging Face — "Harness, Scaffold, and the AI Agent Terms Worth Getting Right"** A more precise breakdown of model vs. scaffold vs. harness vs. agent than this module needs day-to-day — good for a learner who wants the finer distinctions. → https://huggingface.co/blog/agent-glossary

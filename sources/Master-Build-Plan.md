@@ -2,7 +2,7 @@
 
 > The single working document to build from. It consolidates the curriculum (what we teach), the format system (how it's delivered), and the content audit (what we can repurpose vs. build) into a per-module build spec. Open a module, and you have everything needed to start building it.
 >
-> Companion references: the **Curriculum** doc holds full drafted lesson content for the foundational modules; the **Format & Delivery** doc holds the full product/site spec. This doc is where the actual build work is tracked and specced.
+> Companion references: the **Curriculum** doc holds full drafted lesson content for the foundational modules; the **Format & Delivery** doc holds the full product/site spec.
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## 3. Existing content — what to repurpose and where
 
-We reviewed the three workshop sites already built and mapped every piece against this plan. This section is the "harvest view" (by source); each module spec below also lists what it pulls.
+We reviewed the three workshop sites already built and mapped every piece against this plan. Each module's own spec below also lists what it pulls from here.
 
 ### What we reviewed
 
@@ -82,7 +82,7 @@ We reviewed the three workshop sites already built and mapped every piece agains
 
 | Piece | Feeds module | Tier | Rework needed |
 |---|---|---|---|
-| **Capability tour** (image, slides, data, files, sites, browser) | 8 (Beyond Text) + 9 | [Re-level] | This basically *is* Module 8; swap Canva/marketing examples |
+| **Capability tour** (image, slides, data, files, sites, browser) | 8 (Beyond Text) + 9 | [Re-level] | This *is* Module 8; swap Canva/marketing examples |
 | "Where it saves time / where drafts are rough / **human finish**" | 3 (Great at / Breaks) | [Lift] | Excellent capabilities-and-limits material |
 | Source-of-truth discipline (approved material only) | 6 (Grounding) + 12 | [Re-level] | Reframe from brand-safety to "use your real material" |
 | Reusable prompt template ("Create [output] for [audience]…") | 5 (Prompting) | [Lift] | Clean beginner scaffold |
@@ -190,7 +190,7 @@ See ownership table in §6. Working notes (build order, review cadence, input ha
 #### Module 8 · Beyond Text (Multimodal)
 *Owner: Osman · Status: Strong (nearly built) · Target: range*
 - **Covers:** making and analyzing images, audio, video, data visualizations, documents; the same "predict the next piece" idea applied to pixels and sound; consent, deepfakes, real-vs-synthetic.
-- **Repurpose:** *Beyond Code*'s capability tour → basically this whole module (re-level: swap Canva/marketing examples for teen projects; keep the "human finish" honesty).
+- **Repurpose:** *Beyond Code*'s capability tour → this whole module (re-level: swap Canva/marketing examples for teen projects; keep the "human finish" honesty).
 - **Build new:** teen-relevant capability examples; one shareable multimodal mission.
 - **Blocks:** Demo · Mission · Share.
 - **Artifact:** something multimodal worth sharing.

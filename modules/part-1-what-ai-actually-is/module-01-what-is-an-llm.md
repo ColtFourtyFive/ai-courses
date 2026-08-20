@@ -40,7 +40,7 @@ The best mental model: **a brilliant intern who's read almost everything but kno
 
 ### What next-word prediction actually looks like
 
-Here's the process made visible. The model isn't looking anything up — it's scoring every possible next word and picking the most likely one:
+The model isn't looking anything up. It's scoring every possible next word and picking the most likely one:
 
 ```
 INPUT: "Peanut butter and ___"
@@ -64,19 +64,17 @@ NEW INPUT: "Peanut butter and jelly ___"
 
 Every single word in a response goes through this loop. Not retrieved. Not looked up. Predicted, one token at a time.
 
-### Why next-word prediction at scale produces apparent intelligence
+### Why guessing the next word turns into something that looks like intelligence
 
-Here's the part that surprises most people: *how does guessing the next word turn into something that can explain chemistry, write code, or translate languages?*
+Guessing the next word in a chemistry textbook well means absorbing how chemistry works. Guessing the next word in a Python tutorial well means absorbing how Python works. Guessing the next word in a legal brief well means absorbing how legal arguments are built.
 
-The answer is that the model got good at prediction by reading almost all of human knowledge. To predict the next word in a chemistry textbook, it had to absorb how chemistry works. To predict the next word in a Python tutorial, it had to absorb how Python works. To predict the next word in a legal brief, it had to absorb how legal arguments are structured.
+Do that across nearly the whole internet, billions of times, and the model ends up with an internal map of how ideas connect. The intelligence isn't separate from the prediction. It is the prediction, just at a huge scale.
 
-The next-word game, played billions of times across nearly every domain, forced the model to build an internal map of how ideas connect. The intelligence isn't something separate from the prediction — it *is* the prediction, done at enormous scale.
-
-That's also why it can do things no one explicitly programmed it for. Nobody wrote instructions saying "understand irony" or "know how to debug a for-loop." It picked those up because they were necessary to predict text well in those contexts.
+Nobody programmed it to understand irony or debug a for-loop. It picked those up because predicting text well, in text full of irony and for-loops, required it.
 
 ### Why it's fluent — and why it can be confidently wrong
 
-Here's the thing that trips people up. The model predicts patterns, not facts. There's no dictionary, no database, no internal fact-checker. It's asking: *given everything I've read, what word most plausibly comes next?*
+The model predicts patterns, not facts. There's no dictionary, no database, no internal fact-checker inside it. It's asking one question: *given everything I've read, what word most plausibly comes next?*
 
 A smooth, wrong answer is still a good next-word guess.
 
@@ -96,7 +94,7 @@ The chatbot wasn't lying. The AI in the legal case wasn't lying. Both were predi
 
 ### A few terms, demystified
 
-**Tokens.** The model doesn't read letters or whole words the way you do. It breaks text into chunks called **tokens** — roughly word-pieces. Here's what that looks like in practice:
+**Tokens.** The model doesn't read letters or whole words the way you do. It breaks text into chunks called **tokens** — roughly word-pieces:
 
 - The word "the" → 1 token
 - The word "unbelievable" → probably 3 tokens: ["un", "believ", "able"]
@@ -106,7 +104,7 @@ This matters because the model's costs and limits are measured in tokens, not wo
 
 **The context window.** The model only "knows" two things: what it absorbed during training, and what's in front of it right now — the current conversation. That current conversation is called the **context window**.
 
-Modern models can hold anywhere from 100,000 to 1,000,000 tokens in a single conversation — roughly a full novel, or more. That's a lot. But there's a trade-off: longer context means slower, more expensive responses. And the model does **not** remember you between separate chat sessions — unless the app you're using adds a memory feature. (More on that in Module 2.)
+Modern models can hold a lot in a single conversation — some can hold a small book's worth of text at once. But there's a trade-off: longer context means slower, more expensive responses — and even models with a huge advertised limit don't always use all of it reliably; accuracy can quietly degrade well before you hit the stated cap. And the model does **not** remember you between separate chat sessions — unless the app you're using adds a memory feature. (More on that in Module 2.)
 
 **Training vs. using it.** *Training* is the expensive, one-time process where it learned from all that text. *Using it* — every time you type something — is called inference.
 
@@ -140,9 +138,9 @@ It came back with:
 
 It picked "big."
 
-Notice what's happening. The model wasn't retrieving an answer from somewhere. It was scoring every word in its vocabulary based on what most plausibly fits here, given the sentence structure and everything it learned during training. "Big" scored highest — not because it "knows" the trophy was big, but because "big" is the most plausible next word in a sentence like this.
+The model wasn't retrieving an answer from somewhere. It was scoring every word in its vocabulary based on what most plausibly fits here, given the sentence structure and everything it learned during training. "Big" scored highest — not because it "knows" the trophy was big, but because "big" is the most plausible next word in a sentence like this.
 
-Also notice "small" on the list. A model that picks "small" instead of "big" produces a sentence that's grammatically fine but means something completely different. The model doesn't know it changed the meaning — it just picked a high-scoring word. This is next-word prediction showing its seams.
+"Small" is on the list too. A model that picks "small" instead of "big" produces a sentence that's grammatically fine but means something completely different. The model doesn't know it changed the meaning — it just picked a high-scoring word. This is next-word prediction showing its seams.
 
 ---
 
@@ -195,9 +193,9 @@ Fuzzy on any of these? Re-read that section. It'll click faster the second time.
 ---
 
 ## Go Deeper →
-- **3Blue1Brown — "But what is a GPT?"** The best visual explainer of how these models actually work under the hood. ~27 min. Worth it if you're wondering *why* the next-word game works so well. → https://www.3blue1brown.com/lessons/gpt
+- **3Blue1Brown — "Transformers, the tech behind LLMs"** (Deep Learning Chapter 5) The best visual explainer of how these models actually work under the hood. ~27 min. Worth it if you're wondering *why* the next-word game works so well. → https://www.3blue1brown.com/lessons/gpt
 - **CSET — "The Surprising Power of Next-Word Prediction"** Plain-English, non-vendor explainer from Georgetown's Center for Security and Emerging Technology. → https://cset.georgetown.edu/article/the-surprising-power-of-next-word-prediction-large-language-models-explained-part-1/
-- **Air Canada chatbot case (full story)** CBC News. → https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416
-- **Mata v. Avianca — the ChatGPT citations case** Reuters. → https://www.reuters.com/legal/transactional/lawyers-sanctioned-using-chatgpt-cite-bogus-cases-2023-06-22/
-- **OpenAI Tokenizer** — Paste any text and watch it break into tokens live. → https://platform.openai.com/tokenizer *(Open this directly in your browser — it may not load in automated tools.)*
+- **Air Canada chatbot case (full story)** CBC News. → https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416 *(Site blocks automated verification — not evidence it's dead; needs a human eyeball before publishing.)*
+- **Mata v. Avianca — the ChatGPT citations case** Reuters. → https://www.reuters.com/legal/transactional/lawyers-sanctioned-using-chatgpt-cite-bogus-cases-2023-06-22/ *(Reuters blocks automated verification — needs a human eyeball before publishing.)*
+- **OpenAI Tokenizer** — Paste any text and watch it break into tokens live. → https://platform.openai.com/tokenizer *(Blocks automated verification — well-known, long-running real tool; needs a human eyeball before publishing.)*
 - **Ethan Mollick — "On-boarding your AI Intern"** The full version of the brilliant-intern analogy, including its limits. → https://www.oneusefulthing.org/p/on-boarding-your-ai-intern

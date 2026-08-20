@@ -2,8 +2,6 @@
 
 > One course that takes someone from "AI scares/confuses me" to "I understand how it works, I use it well, and I can build with it." Rigorous on the concepts, plain in the language, hands-on wherever it helps — and never dry for the sake of it.
 
-This document combines two drafts into one: the rigorous concept-and-skills curriculum, and the demystify-first, fear-killing framing. It keeps the substance of the first and the accessibility of the second.
-
 **Who this is for.** Teens 13–16, no CS background. Frame them as early professionals — these skills transfer directly to real work.
 
 ---
@@ -14,7 +12,7 @@ This document combines two drafts into one: the rigorous concept-and-skills curr
 - **The Core** — what every learner goes through. Tight, clear, and built around *understanding by doing* wherever the topic allows.
 - **Go Deeper** — an optional reference layer under each module for anyone who wants the full technical detail. You never need it to move forward; it's there when curiosity hits.
 
-**Three honest rules about format.**
+**Three rules about format.**
 1. Some modules are concept modules — you read, watch a demo, and learn. That's fine and necessary; you can't skip understanding how the thing works. We keep those *short and clear*, not textbook-dry.
 2. Most modules pair a concept with something you actually do or build, because AI is learned by using it.
 3. Every module ends with one thing you can *keep or use* — a prompt, a tool, a small build. Progress is always visible.
@@ -106,7 +104,7 @@ Think of it as three levels, each wrapping the one before it.
 
 **1. The LLM — the brain.** This is the raw next-word predictor from Module 1. On its own it takes text in and puts text out. That's *all* it can do. It can't click a link, can't remember past the current message, can't use a tool. Examples of models: GPT-5, Claude Opus, Gemini. When people name a "model," this is the layer they mean.
 
-**2. The chatbot — the brain in a conversation.** Wrap that brain in an app that keeps a conversation going, and maybe adds memory, web search, and file uploads, and you get a chatbot: **ChatGPT, Claude.ai, Gemini** (the apps). Here's the reveal most people miss: **browsing, memory, and tools are features of the app, not the brain.** The exact same model, used raw through a developer connection, has none of those unless someone adds them. So "ChatGPT" is not the same thing as "GPT" — one is the product, one is the brain inside it.
+**2. The chatbot — the brain in a conversation.** Wrap that brain in an app that keeps a conversation going, and maybe adds memory, web search, and file uploads, and you get a chatbot: **ChatGPT, Claude.ai, Gemini** (the apps). **Browsing, memory, and tools are features of the app, not the brain.** The exact same model, used raw through a developer connection, has none of those unless someone adds them. So "ChatGPT" is not the same thing as "GPT" — one is the product, one is the brain inside it.
 
 **3. The agent — the brain with hands and a to-do list.** Give the brain a set of tools *and* a loop — where it can make a plan, take an action, look at the result, and decide the next step, working toward a goal with much less hand-holding — and you have an agent. The difference in one line: **a chatbot answers you; an agent goes and does something.** Examples: Claude Code and Codex (agents built for programming), and computer-use agents that click around a screen.
 
@@ -190,7 +188,7 @@ A few techniques worth knowing (kept short):
 - **Say what you *don't* want.** "Don't use bullet points. Don't add a conclusion."
 - **Break big asks into steps** instead of one giant request.
 
-**The unlock:** once you internalize that the quality is in *how you ask* — and that you fully control that — you stop being at the mercy of the AI. This is the barrier that, once broken, opens everything after it.
+Once you internalize that quality lives in *how you ask*, and that you control that completely, you stop being at the mercy of the AI. That's the shift the rest of this course builds on.
 
 **One caution.** A great prompt makes output *better*, not *true*. Module 3's verify habit still applies.
 
